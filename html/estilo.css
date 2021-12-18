@@ -1,0 +1,280 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* .............BODY................. */
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+
+/* ..............HEADER............. */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #11918c;
+    background-size: contain;
+    justify-content:space-between
+}
+
+.header__foto{
+    display: inline-block;
+    padding: 1.5rem;
+    margin-left: 1rem;
+    align-content: center;
+
+}
+
+.header__buscador{
+    display: inline-block;
+    padding: 2rem;
+    margin-right: 3;
+
+}
+
+/* ......... NAV............*/
+.header__nav ul{
+    padding: 2rem;
+    list-style-type: none; 
+}
+
+.header__nav li{
+    display: inline-block;
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: rem;
+    padding: 0.3rem;
+}
+
+
+/* ...........PRINCIPAL BANNER............... */
+
+.bannerflex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 0%;
+    background-color: #f4f4f4;
+}
+.bannerflex__texto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    margin-top: 14rem;
+}
+.banner__titulo{
+    display: inline-block;
+    width: 10rem;
+    font-size: 10rem;
+    line-height: 9rem;
+}
+
+.banner__subtitulo{
+    font-size: 2rem;
+}
+
+.banner__boton{
+    background-color: #11918c;
+    border-style: none;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;    
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    padding: 0.2rem;
+    width: 8rem;
+}
+
+.banner__foto{
+    width: 90rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+/* ..............SECCION 2............... */
+
+.sobrenosotros{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: #11918c;
+    height: 30rem;
+    color: whitesmoke;
+}
+
+.sobrenosotros__titulo{
+    display:inline-block;
+    width: 10rem;
+    justify-content:first baseline;
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 8rem;
+    margin-right: 40rem;
+    margin-left: 3rem;
+    line-height: 6rem;
+
+}
+
+.sobrenosotros__texto{
+    display: inline-block;
+    width: 40rem;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 7rem;
+    margin-left: 7rem;
+
+}
+
+/* ...................STICKERS DESTACADOS....................... */
+
+.sticker{
+    background-color:background-color:#f4f4f4;
+}
+
+.stickersdestacados{
+    display: inline-block;
+    color: #11918c;
+    font-size: 5rem;
+    width: 10rem;
+    margin: 5rem;
+    line-height: 5rem;
+    background-color:
+}
+
+/* ................GRILLA.................... */
+/* aca iria acomomodado con grid pero lo estoy practicando todavia jajaja  */
+/* ...................STICKER 1...................... */
+
+.foto1{
+    display: inline-block;
+    margin-left: 5rem;
+  
+}
+
+.fotozoom{
+    overflow: hidden;
+    transition: all 150ms eas;
+}
+
+.foto1__foto:hover{
+    transform: scale(140%);
+}
+
+.foto1__epigrafetexto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.foto1__epigrafe{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:whitesmoke;
+    height: 4rem;
+}
+
+.foto1__boton{
+    background-color: #11918c;
+    border-style: none;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;    
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.2rem;
+    width: 6rem;
+}
+
+.foto1__boton--largo{
+    background-color: #11918c;
+    border-style: none;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;    
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.2rem;
+    width: 6rem;
+    margin-left: 3rem;
+}
+
+.foto1__epigrafetexto--largo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    width: 25rem;
+} 
+
+
+.foto1__epigrafe1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:whitesmoke;
+    height: 6rem;
+}
+
+/* .................FOOTER..................... */
+
+.footer{
+    background-color: #11918c ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-size: 2rem;
+}
+
+.footer__foto{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.footer__menu ul{
+    padding: 2rem;
+    list-style-type: none;
+}
+
+.footer__menu il{
+    display: inline-block;
+}
+
+.footer__menu a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: rem;
+    padding: 0.3rem;
+    margin-right: 50rem;
+}
+
+.footer__cta{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__subtitulo{
+    color: whitesmoke;
+    margin-top: 3.5rem;
+    margin-right: 5rem;
+}
+
+.footer__mail{
+    margin-top: 0.2rem;
+}
+
+.footer__iconos{
+    margin-top: 0.4rem;
+}
