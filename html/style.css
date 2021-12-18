@@ -1,0 +1,168 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Spartan', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vn;
+    background: #131313;
+}
+
+.container{
+    position: relative;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background:rgb(230, 229, 229);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #11918c;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after{
+    content: 'Pegarte';
+    position: absolute;
+    top: 45%;
+    left: -10%;
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: italic;
+    color: rgba(95, 95, 95, 0.05)
+}
+
+.imgBx{
+    margin-left: 1.2rem;
+
+}
+
+.container .card .imgBx{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 60%;
+    height: 280px;
+    transition: 0.5s;
+  }
+
+  .container .card:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+    width: 60%;
+    height: 260px;
+    margin-left: 2rem;
+
+      
+  }
+
+  .container .card .contentBx{
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      transition: 1s;
+      z-index: 10;
+  }
+
+  .container .card:hover .contentBx{
+      height: 180px;
+  }
+
+  .container .card .contentBx h2{
+      position: relative;
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: px;
+      color: #11918c;
+  }
+
+  .container .card .contentBx .size{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 20px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+  }
+
+  .container .card:hover .contentBx .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0,5s;
+
+  }
+
+  .container .card .contentBx .size h3{
+      color: #131313;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-right: 10px;
+  }
+
+.container .card .contentBx .size span{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+    background: #11918c;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover{
+    background: #033b3a;
+}
+
+.container .card .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #11918c;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    color: whitesmoke;
+    opacity: 0%;
+    transform: translateY(50px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.container .card:hover .contentBx a{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay:0,75s;
+}
