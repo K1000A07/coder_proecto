@@ -81,15 +81,36 @@ body{
 }
 
 .banner__boton{
-    background-color: #11918c;
+    /* background-color: #11918c;
     border-style: none;
     margin-top: 0.5rem;
     text-decoration: none;
     color: whitesmoke;    
     font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
     border-radius: 2rem;
     padding: 0.2rem;
-    width: 8rem;
+    width: 8rem; */
+    display: inline-block;
+    padding: 10px 20px;
+    background: #11918c;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    color: whitesmoke;
+    opacity: 0%;
+    transform: translateY(50px);
+    transition: 0.5s;
+
+.banner__boton{
+    opacity: 1%;
+    transform: translateY(0px);
+    transition-delay:0,75s;
+}
+    
+    
 }
 
 .banner__foto{
@@ -229,7 +250,7 @@ body{
 
 /* ..................PROBANDO........... */
 .sticker1{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -240,6 +261,7 @@ body{
 
 .container{
     position: relative;
+    filter: drop-shadow(5px 5px 10px rgb(167, 167, 167));
 }
 
 .container .card{
@@ -383,7 +405,6 @@ body{
     opacity: 0%;
     transform: translateY(50px);
     transition: 0.5s;
-    cursor: pointer;
 }
 
 
