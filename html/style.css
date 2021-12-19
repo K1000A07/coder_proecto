@@ -166,3 +166,81 @@ body{
     transform: translateY(0px);
     transition-delay:0,75s;
 }
+
+
+/* ................... fotos viejas -................. */
+/* ...................STICKER 1...................... */
+
+/* .foto1{
+    display: inline-block;
+    margin-left: 5rem;
+  
+}
+
+.fotozoom{
+    overflow: hidden;
+    transition: all 150ms eas;
+}
+
+.foto1__foto:hover{
+    transform: scale(140%);
+}
+
+.foto1__epigrafetexto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.foto1__epigrafe{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:whitesmoke;
+    height: 4rem;
+}
+
+.foto1__boton{
+    background-color: #11918c;
+    border-style: none;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;    
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.2rem;
+    width: 6rem;
+}
+
+.foto1__boton--largo{
+    background-color: #11918c;
+    border-style: none;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;    
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.2rem;
+    width: 6rem;
+    margin-left: 3rem;
+}
+
+.foto1__epigrafetexto--largo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    width: 25rem;
+} 
+
+
+.foto1__epigrafe1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:whitesmoke;
+    height: 6rem;
+} */

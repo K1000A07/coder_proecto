@@ -74,44 +74,33 @@ body{
     width: 10rem;
     font-size: 10rem;
     line-height: 9rem;
+    font-weight: 800;
 }
 
 .banner__subtitulo{
     font-size: 2rem;
 }
 
-.banner__boton{
-    /* background-color: #11918c;
-    border-style: none;
-    margin-top: 0.5rem;
+.boton {
     text-decoration: none;
-    color: whitesmoke;    
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 800;
-    border-radius: 2rem;
-    padding: 0.2rem;
-    width: 8rem; */
-    display: inline-block;
-    padding: 10px 20px;
-    background: #11918c;
+    color: #f4f4f4;
     border-radius: 4px;
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: 800;
-    color: whitesmoke;
-    opacity: 0%;
-    transform: translateY(50px);
-    transition: 0.5s;
+    width: 8rem;
+    height: 2rem; 
+    background-color: #11918c;
+    text-align: center;
+    padding-top: 0.5rem ;
+    margin-top: 1rem;
+}
 
-.banner__boton{
-    opacity: 1%;
-    transform: translateY(0px);
-    transition-delay:0,75s;
+.boton a{
+    text-decoration: none;
+    color: #f4f4f4; 
+    font-size: 1.2rem;
+    font-weight: 600;
+
 }
-    
-    
-}
+
 
 .banner__foto{
     width: 90rem;
@@ -133,15 +122,14 @@ body{
 .sobrenosotros__titulo{
     display:inline-block;
     width: 10rem;
-    justify-content:first baseline;
+    height: 3rem;
+    justify-content:center;
     font-size: 4rem;
     text-align: left;
     margin-top: 8rem;
     margin-right: 40rem;
     margin-left: 3rem;
-    line-height: 6rem;
-
-}
+    line-height: 6rem;}
 
 .sobrenosotros__texto{
     display: inline-block;
@@ -155,9 +143,6 @@ body{
 
 /* ...................STICKERS DESTACADOS....................... */
 
-.sticker{
-    background-color:background-color:#f4f4f4;
-}
 
 .stickersdestacados{
     display: inline-block;
@@ -166,102 +151,15 @@ body{
     width: 10rem;
     margin: 5rem;
     line-height: 5rem;
-    background-color:
+    background-color: #fff;
 }
 
-/* ................GRILLA.................... */
-/* aca iria acomomodado con grid pero lo estoy practicando todavia jajaja  */
-/* ...................STICKER 1...................... */
-
-/* .foto1{
-    display: inline-block;
-    margin-left: 5rem;
-  
-}
-
-.fotozoom{
-    overflow: hidden;
-    transition: all 150ms eas;
-}
-
-.foto1__foto:hover{
-    transform: scale(140%);
-}
-
-.foto1__epigrafetexto{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.foto1__epigrafe{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    background-color:whitesmoke;
-    height: 4rem;
-}
-
-.foto1__boton{
-    background-color: #11918c;
-    border-style: none;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    color: whitesmoke;    
-    font-size: 1rem;
-    border-radius: 2rem;
-    padding: 0.2rem;
-    width: 6rem;
-}
-
-.foto1__boton--largo{
-    background-color: #11918c;
-    border-style: none;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    color: whitesmoke;    
-    font-size: 1rem;
-    border-radius: 2rem;
-    padding: 0.2rem;
-    width: 6rem;
-    margin-left: 3rem;
-}
-
-.foto1__epigrafetexto--largo{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-    width: 25rem;
-} 
-
-
-.foto1__epigrafe1{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    background-color:whitesmoke;
-    height: 6rem;
-} */
-
-
-/* ..................PROBANDO........... */
-.sticker1{
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vn;
-    background: #white;
-
-}
+/* ................mosaico fotos.................... */
 
 .container{
     position: relative;
     filter: drop-shadow(5px 5px 10px rgb(167, 167, 167));
+    margin-left:3rem ;
 }
 
 .container .card{
@@ -300,9 +198,10 @@ body{
     color: rgba(95, 95, 95, 0.05)
 }
 
+/* -------------img bellota------------ */
+
 .imgBx{
     margin-left: 1.2rem;
-
 }
 
 .container .card .imgBx{
@@ -313,17 +212,40 @@ body{
     width: 60%;
     height: 280px;
     transition: 0.5s;
-  }
+}
 
-  .container .card:hover .imgBx{
-    top: 0%;
+.container .card:hover .imgBx{
+    top: 2%;
     transform: translateY(0%);
     width: 60%;
     height: 260px;
     margin-left: 2rem;
+}
 
-      
-  }
+  /*---------------- img olaf---------------*/
+
+.imgBx__olaf{
+    display: inline-block;
+    margin-left: 5rem;}
+
+.container .card .imgBx__olaf{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 60%;
+    height: 280px;
+    transition: 0.5s;
+}
+
+  .container .card:hover .imgBx__olaf{
+    top: 2%;
+    transform: translateY(0%);
+    width: 60%;
+    height: 260px;
+    margin-left: 5.5rem;
+}
+
 
   .container .card .contentBx{
       position: absolute;
@@ -413,6 +335,14 @@ body{
     transform: translateY(0px);
     transition-delay:0,75s;
 }
+
+/* .................. mosaico flex.................. */
+ .filaarriba{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-bottom: 5rem;
+ }
 
 /* .................FOOTER..................... */
 
