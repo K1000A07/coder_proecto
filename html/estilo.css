@@ -69,7 +69,8 @@ body{
     padding-left: 5rem;
     margin-top: 14rem;
 }
-.banner__titulo{
+
+.bannerflex__texto h1{
     display: inline-block;
     width: 10rem;
     font-size: 10rem;
@@ -436,24 +437,71 @@ body{
 /* ..................Banner................... */
 
 .banner__personalizados{
-   background-color: aqua;
-
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(237, 238, 238);
+    height: 30rem;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    color: #11918c;
 }
 
 .banner__personalizados h3{
-display: inline-block;
-text-align: center;
-
+    font-size: 5rem;
 }
 
 
+.banner__personalizados h4{
+    font-size: 1.5rem;
+}
+
+.boton__personalizados:hover{
+        background-color: #033b3a;
+        transition-delay:0,75s;
+    }
+    
+.boton__personalizados {
+        text-decoration: none;
+        color: #f4f4f4;
+        border-radius: 4px;
+        width: 8rem;
+        height: 2rem; 
+        background-color: #11918c;
+        text-align: center;
+        padding-top: 0.5rem ;
+        /* margin-top: 1rem; */
+        transition: 0.5s;
+    }
+    
+.boton__personalizados a{
+        text-decoration: none;
+        color: #f4f4f4; 
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
 
 
+/* ........................seccion 2 personalizados..................... */
 
+.personalizados__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: blue;
+}
 
+.info__texto{
+    width: 30rem;
+}
 
-
-
+.info__foto{
+    background-color: brown;
+    height: 40rem;
+    width: 40rem;
+}
 
 /* .................FOOTER..................... */
 
