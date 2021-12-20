@@ -81,6 +81,11 @@ body{
     font-size: 2rem;
 }
 
+.boton:hover{
+    background-color: #033b3a;
+    transition-delay:0,75s;
+}
+
 .boton {
     text-decoration: none;
     color: #f4f4f4;
@@ -91,6 +96,7 @@ body{
     text-align: center;
     padding-top: 0.5rem ;
     margin-top: 1rem;
+    transition: 0.5s;
 }
 
 .boton a{
@@ -98,7 +104,6 @@ body{
     color: #f4f4f4; 
     font-size: 1.2rem;
     font-weight: 600;
-
 }
 
 
@@ -110,6 +115,21 @@ body{
 
 /* ..............SECCION 2............... */
 
+.sobrenosotros__titulo{
+    display:inline-block;
+    width: 10rem;
+    height: 3rem;
+    justify-content:center;
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 8rem;
+    margin-right: 40rem;
+    margin-left: 3rem;
+    line-height: 6rem;
+    font-weight: 900;
+}
+
 .sobrenosotros{
     display: flex;
     flex-direction: row-reverse;
@@ -119,17 +139,7 @@ body{
     color: whitesmoke;
 }
 
-.sobrenosotros__titulo{
-    display:inline-block;
-    width: 10rem;
-    height: 3rem;
-    justify-content:center;
-    font-size: 4rem;
-    text-align: left;
-    margin-top: 8rem;
-    margin-right: 40rem;
-    margin-left: 3rem;
-    line-height: 6rem;}
+    
 
 .sobrenosotros__texto{
     display: inline-block;
@@ -152,6 +162,7 @@ body{
     margin: 5rem;
     line-height: 5rem;
     background-color: #fff;
+    font-weight: 900;
 }
 
 /* ................mosaico fotos.................... */
@@ -226,9 +237,33 @@ body{
 
 .imgBx__olaf{
     display: inline-block;
-    margin-left: 5rem;}
+    margin-left: 6rem;
+}
 
 .container .card .imgBx__olaf{
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 60%;
+    height: 300px;
+    transition: 0.5s;
+}
+
+  .container .card:hover .imgBx__olaf{
+    top: 2%;
+    transform: translateY(0%);
+    width: 60%;
+    height: 260px;
+    margin-left: 6.5rem;
+}
+
+/*..................... img lcdp ...................... */
+.imgBx__lcdp{
+    margin-left: 1.2rem;
+}
+
+.container .card .imgBx__lcdp{
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
@@ -238,15 +273,61 @@ body{
     transition: 0.5s;
 }
 
-  .container .card:hover .imgBx__olaf{
+.container .card:hover .imgBx__lcdp{
     top: 2%;
     transform: translateY(0%);
     width: 60%;
     height: 260px;
-    margin-left: 5.5rem;
+    margin-left: 2rem;
 }
 
+/*..................... img mario ...................... */
+.imgBx__mario{
+    margin-left: 1.5rem;
+}
 
+.container .card .imgBx__mario{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 60%;
+    height: 280px;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx__mario{
+    top: 2%;
+    transform: translateY(0%);
+    width: 60%;
+    height: 260px;
+    margin-left:2rem;
+}
+
+/*..................... img papas ...................... */
+.imgBx__papas{
+    margin-left: 3.4rem;
+}
+
+.container .card .imgBx__papas{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 60%;
+    height: 280px;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx__papas{
+    top: 2%;
+    transform: translateY(0%);
+    width: 60%;
+    height: 260px;
+    margin-left: 4rem;
+}
+
+/* ............... Catiner en gral................... */
   .container .card .contentBx{
       position: absolute;
       bottom: 0%;
@@ -295,7 +376,8 @@ body{
       margin-right: 10px;
   }
 
-.container .card .contentBx .size span{
+
+  .container .card .contentBx .size span{
     width: 40px;
     height: 30px;
     text-align: center;
@@ -309,6 +391,7 @@ body{
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .container .card .contentBx .size span:hover{
@@ -334,15 +417,43 @@ body{
     opacity: 1;
     transform: translateY(0px);
     transition-delay:0,75s;
+   
 }
 
 /* .................. mosaico flex.................. */
- .filaarriba{
-     display: flex;
+.mosaicoflex{
+    display: flex;
      flex-direction: row;
      justify-content: center;
      margin-bottom: 5rem;
  }
+
+
+
+
+/* ............. Personalizados................... */
+
+/* ..................Banner................... */
+
+.banner__personalizados{
+   background-color: aqua;
+
+}
+
+.banner__personalizados h3{
+display: inline-block;
+text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
 
 /* .................FOOTER..................... */
 
