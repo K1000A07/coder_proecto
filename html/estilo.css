@@ -3,7 +3,16 @@
     margin: 0px;
 }
 
-
+/* ............. grid.......... */
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "bannerflex"
+    "sobrenosotros"
+    "footer";
+    grid-template-rows: 1,5% auto 1fr 10px;
+}
 /* .............BODY................. */
 body{
     font-family: 'Spartan', sans-serif;
@@ -439,7 +448,7 @@ body{
 .banner__personalizados{
     display: flex;
     flex-direction: column-reverse;
-    background-color: rgb(237, 238, 238);
+    background-color: rgb(142, 143, 143);
     height: 30rem;
     width: auto;
     align-items: center;
@@ -490,15 +499,24 @@ body{
     justify-content: center;
     align-items: center;
     padding: 4rem;
-    background-color: blue;
+    background-color: rgb(237, 238, 238);
 }
 
 .info__texto{
-    width: 30rem;
+    width: 35rem;
+    margin-right: 2rem;
+}
+
+.info__texto h3{
+    font-size: 2rem;
+}
+
+.info__texto p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
 
 .info__foto{
-    background-color: brown;
     height: 40rem;
     width: 40rem;
 }
