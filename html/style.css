@@ -4,7 +4,47 @@
 	padding: 0;
 }
 
-body {
+
+#grilla {
+	display: grid;
+	grid-template-areas:
+	  "header"
+	  "bannerflex"
+	  "sobrenosotros"
+	  "stickers"
+	  "footer";
+	grid-template-rows: 3.2rem 40rem 60rem 30rem 6rem; 
+ }
+
+
+ .border {
+	border: 1px solid black;
+ }
+ 
+
+header {
+   grid-area: header;
+}
+footer {
+   grid-area: footer;
+}
+section#bannerflex {
+   grid-area: bannerflex;     
+}
+section#sobrenosotros {
+   grid-area: sobrenosotros;     
+}
+section#stickers{
+	grid-area: stickers;
+}
+
+
+
+
+
+
+
+/* body {
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -185,7 +225,7 @@ body {
 		&:hover{
 			transform: scale(1.1);
 		}
-	}
+	} */
 
 }
 
