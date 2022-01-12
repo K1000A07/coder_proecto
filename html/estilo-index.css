@@ -162,19 +162,22 @@ body{
 
 /* ...................STICKERS DESTACADOS....................... */
 
-#sticker{
-    grid-area: sticker;
-}
 .stickersdestacados{
-    display: inline-block;
-    color: #11918c;
-    font-size: 5rem;
-    width: 10rem;
+    display: flex;
+    flex-direction: column;
     margin: 5rem;
-    line-height: 5rem;
     background-color: #fff;
-    font-weight: 900;
+    width: auto;
+    
 }
+ .stickersdestacados__titulo{
+    font-size: 5rem;
+    color: #11918c;
+    font-weight: 900;
+    line-height: 5rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+ }
 
 /* ................mosaico fotos.................... */
 
@@ -432,15 +435,16 @@ body{
 }
 
 /* .................. mosaico flex.................. */
-.mosaicogrid{
-    display: ;
-     flex-direction: row;
-     justify-content: center;
-     margin-bottom: 5rem;
- }
-
-
-
+.gridpadre{
+    display: grid;
+    grid-template-columns: 22rem 22rem 22rem 22rem 22rem;
+    grid-template-rows: auto;
+    margin-bottom: 4rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+}
 
 
 
@@ -597,9 +601,52 @@ body{
 .footer__iconos{
     margin-top: 0.4rem;
 }
+.icono{
+    width: 20px;
+}
 
 /* vista celular */
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 981px){
+
+
+    /* ..........catalogos............... */
+    .gridpadre{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin-bottom: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sticker{
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .stickersdestacados{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: auto;
+        align-items: center;
+        justify-items: center;
+        
+    }
+     .stickersdestacados__titulo{
+        display: flex;
+        font-size: 4rem;
+        color: #11918c;
+        font-weight: 900;
+        line-height: 4rem;
+        width: 10rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+        text-align: center;
+     }
+
+   
+    /* ...........footer............. */
     .footer{
         background-color: #11918c ;
         display: flex;
@@ -663,6 +710,7 @@ body{
     .footer__iconos{
         margin-top: 0.4rem;
         margin-left: 2rem;
+        margin-bottom: 2rem;
     }
 
     .icono{
