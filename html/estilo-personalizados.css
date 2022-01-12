@@ -1,0 +1,331 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+    /* .............BODY................. */
+body{
+    font-family: 'Spartan', sans-serif !important; 
+}
+
+
+/* ..............HEADER............. */
+
+.header{
+    --bs-bg-opacity: 1;
+    background-color: #11918c;
+}
+/* .header{
+    display: flex;
+    flex-direction: row;
+    background-color: #11918c;
+    background-size: contain;
+    justify-content:space-between;
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+} */
+
+.header__foto{
+    display: inline-block;
+    padding: 1.5rem;
+    margin-left: 1rem;
+    align-content: center;
+
+}
+
+.header__buscador{
+    display: inline-block;
+    padding: 2rem;
+    margin-right: 3;
+
+}
+
+/* ......... NAV............*/
+.header__nav ul{
+    padding: 2rem;
+    list-style-type: none; 
+}
+
+.header__nav li{
+    display: inline-block;
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: rem;
+    padding: 0.3rem;
+}
+
+/* ............. Personalizados................... */
+
+
+/* ..................Banner................... */
+
+#banner__personalizados{
+    grid-area: banner__personalizados;
+}
+.banner__personalizados{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(142, 143, 143);
+    height: 30rem;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    color: #11918c;
+}
+
+.banner__personalizados h3{
+    font-size: 5rem;
+}
+
+
+.banner__personalizados h4{
+    font-size: 1.5rem;
+}
+
+.boton__personalizados:hover{
+        background-color: #c9caca;
+        transition-delay:0,75s;
+    }
+    
+.boton__personalizados {
+        text-decoration: none;
+        color: #f4f4f4;
+        border-radius: 4px;
+        width: 8rem;
+        height: 2rem; 
+        background-color: #11918c;
+        text-align: center;
+        padding-top: 0.5rem ;
+        /* margin-top: 1rem; */
+        transition: 0.5s;
+    }
+    
+.boton__personalizados a{
+        text-decoration: none;
+        color: #f4f4f4; 
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+
+
+
+
+
+
+/* ........................seccion 2 personalizados..................... */
+
+
+#personalizados__info{
+    grid-area: personalizados__info;
+}
+.personalizados__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: rgb(237, 238, 238);
+}
+
+.info__texto{
+    width: 35rem;
+    margin-right: 2rem;
+}
+
+.info__texto h3{
+    font-size: 2rem;
+}
+
+.info__texto p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.info__foto{
+    height: 40rem;
+    width: 40rem;
+}
+
+
+/* ...............precios............. */
+#personalizados__precios{
+    grid-area: personalizados__precios;
+}
+
+/* .................FOOTER..................... */
+
+
+.footer{
+    background-color: #11918c ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-size: 2rem;
+}
+
+.footer__foto{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.footer__menu ul{
+    padding: 2rem;
+    list-style-type: none;
+}
+
+.footer__menu il{
+    display: inline-block;
+}
+
+.footer__menu a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: rem;
+    padding: 0.3rem;
+    margin-right: 50rem;
+}
+
+.footer__cta{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__subtitulo{
+    color: whitesmoke;
+    margin-top: 3.5rem;
+    margin-right: 5rem;
+}
+
+.footer__mail{
+    margin-top: 0.2rem;
+}
+
+.footer__iconos{
+    margin-top: 0.4rem;
+}
+.icono{
+    width: 20px;
+}
+
+/* vista celular */
+@media only screen and (max-width: 981px){
+
+
+    /* ..........catalogos............... */
+    .gridpadre{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin-bottom: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sticker{
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .stickersdestacados{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: auto;
+        align-items: center;
+        justify-items: center;
+        
+    }
+     .stickersdestacados__titulo{
+        display: flex;
+        font-size: 4rem;
+        color: #11918c;
+        font-weight: 900;
+        line-height: 4rem;
+        width: 10rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+        text-align: center;
+     }
+
+   
+    /* ...........footer............. */
+    .footer{
+        background-color: #11918c ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: auto;
+        align-items: center;
+    }
+
+    .footer__foto{
+        display: inline-block;
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: 0rem;
+        align-items: center;
+    }
+
+    .footer__menu ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0rem;
+        list-style-type: none;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 10px;
+    }
+    
+    
+    .footer__menu a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: rem;
+        padding: 0.3rem;
+        margin-right: 0rem;
+    }
+
+    .footer__cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__subtitulo{
+        color: whitesmoke;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        font-size: 10px;
+    }
+    
+    #newsletter{
+       width: 8rem;
+       margin-right: 0rem;
+       align-items: center;
+       margin-left: 1.2rem;
+    }
+    .footer__mail{
+        margin-top: 0.2rem;
+        font-size: 10px;
+    }
+    
+    .footer__iconos{
+        margin-top: 0.4rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .icono{
+        width: 20px;
+    }
+}
+
+
