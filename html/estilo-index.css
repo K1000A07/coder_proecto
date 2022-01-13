@@ -16,7 +16,7 @@ body{
 .header{
     --bs-bg-opacity: 1;
     background-color: #11918c;
-    width: auto%;
+    width: auto;
 }
 /* .header{
     display: flex;
@@ -126,21 +126,6 @@ body{
 /* ..............SECCION 2............... */
 
 
-.sobrenosotros__titulo{
-    display:inline-block;
-    width: 10rem;
-    height: 3rem;
-    justify-content:center;
-    font-weight: 900;
-    font-size: 4rem;
-    text-align: left;
-    margin-top: 8rem;
-    margin-right: 40rem;
-    margin-left: 3rem;
-    line-height: 6rem;
-    font-weight: 900;
-}
-
 .sobrenosotros {
     display: flex;
     flex-direction: row-reverse;
@@ -150,7 +135,22 @@ body{
     color: whitesmoke;
 }
 
-    
+.sobrenosotros__titulo{
+    display:inline-block;
+    width: 10rem;
+    height: 3rem;
+    justify-content:center;
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 10rem;
+    margin-right: 40rem;
+    margin-left: 3rem;
+    line-height: 4rem;
+
+}
+
+  
 
 .sobrenosotros__texto{
     display: inline-block;
@@ -569,6 +569,36 @@ body{
         margin-bottom: 0%;
     }
     
+
+/* ..............SECCION 2............... */
+
+
+.sobrenosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #11918c;
+    width: auto;
+    color: whitesmoke;
+}
+
+.sobrenosotros__titulo{
+    display:inline-block;
+    width: 10rem;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 3rem;
+
+}
+
+  
+.sobrenosotros__texto{
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    font-size: 12px;
+}
 
     /* ..........catalogos............... */
     .gridpadre{
