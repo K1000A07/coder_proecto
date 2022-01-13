@@ -64,27 +64,34 @@ body{
 
 /* ..................Banner................... */
 
-#banner__personalizados{
-    grid-area: banner__personalizados;
+.banner{
+    position: relative;
+    display: flex;
+    text-align: center;
+    height: 30rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 .banner__personalizados{
     display: flex;
     flex-direction: column-reverse;
-    background-color: rgb(142, 143, 143);
-    height: 30rem;
     width: auto;
     align-items: center;
     justify-content: center;
-    color: #11918c;
+    position: absolute;
 }
 
 .banner__personalizados h3{
     font-size: 5rem;
+    font-weight: 800;
+    color: #11918c;
 }
 
 
 .banner__personalizados h4{
     font-size: 1.5rem;
+    color: #11918c;
 }
 
 .boton__personalizados:hover{
@@ -100,8 +107,7 @@ body{
         height: 2rem; 
         background-color: #11918c;
         text-align: center;
-        padding-top: 0.5rem ;
-        /* margin-top: 1rem; */
+        padding-top: 0.2rem ;
         transition: 0.5s;
     }
     
@@ -112,6 +118,9 @@ body{
         font-weight: 600;
     }
 
+.imagen{
+    width:120rem;
+}
 
 
 
