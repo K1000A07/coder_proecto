@@ -194,10 +194,20 @@ body{
 
 /* ...............precios............. */
 
+.demo{
+    margin: 3rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 a {
     text-decoration: none;
 }
+
 
 .pricingTable {
     text-align: center;
