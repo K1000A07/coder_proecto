@@ -421,42 +421,49 @@ a {
 /* vista celular */
 @media only screen and (max-width: 981px){
 
-
-    /* ..........catalogos............... */
-    .gridpadre{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        margin-bottom: 4rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sticker{
-        margin-bottom: 1rem;
-        align-items: center;
-    }
-
-    .stickersdestacados{
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        width: auto;
-        align-items: center;
-        justify-items: center;
-        
-    }
-     .stickersdestacados__titulo{
-        display: flex;
-        font-size: 4rem;
+.banner__personalizados h3{
+        font-size: 3.5rem;
+        font-weight: 800;
         color: #11918c;
-        font-weight: 900;
-        line-height: 4rem;
-        width: 10rem;
-        margin-bottom: 2rem;
-        justify-content: center;
-        text-align: center;
-     }
+    }
+
+    /* ........................seccion 2 personalizados..................... */
+
+.personalizados__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: rgb(237, 238, 238);
+    height: fit-content;
+}
+
+.info__texto{
+    width: 25rem;
+    margin-right: 2rem;
+}
+
+.info__texto h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.info__texto p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px; 
+  filter: drop-shadow(5px 5px 10px rgb(197, 196, 196));
+}
+
+
 
    
     /* ...........footer............. */
