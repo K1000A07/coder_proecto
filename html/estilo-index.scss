@@ -1,0 +1,465 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* .............BODY................. */
+body {
+  font-family: "Spartan", sans-serif !important;
+}
+
+// ................header................
+.header {
+  --bs-bg-opacity: 1;
+  background-color: #11918c;
+  width: auto;
+  overflow: hidden;
+
+  .ul {
+    padding: 2rem;
+    list-style-type: none;
+  }
+
+  .li {
+    display: inline-block;
+  }
+
+  .a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: rem;
+    padding: 0.3rem;
+  }
+}
+
+// ............banner principal............
+
+.bannerflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0%;
+  background-color: #f4f4f4;
+  width: auto;
+  overflow: hidden;
+
+  .bannerflex__texto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    margin-top: 14rem;
+
+    h1 {
+      display: inline-block;
+      width: 10rem;
+      font: {
+        size: 10rem;
+        weight: 800;
+      }
+      line-height: 9rem;
+    }
+  }
+
+  .banner__subtitulo {
+    font-size: 2rem;
+  }
+
+  .boton {
+    text: {
+      decoration: none;
+      align: center;
+    }
+    color: #f4f4f4;
+    border-radius: 4px;
+    width: 8rem;
+    height: 2rem;
+    background-color: #11918c;
+    padding-top: 0.2rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+
+    :hover {
+      background-color: #033b3a;
+      transition-delay: 0, 75s;
+    }
+
+    a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font: {
+        size: 1.2rem;
+        weight: 600;
+      }
+    }
+  }
+  .banner__foto {
+    width: 90rem;
+    margin: {
+      top: 0%;
+      bottom: 0%;
+    }
+  }
+}
+
+/* ..............SECCION 2............... */
+
+.sobrenosotros {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-color: #11918c;
+  height: 30rem;
+  color: whitesmoke;
+  width: 100%;
+
+  h2 {
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    justify-content: center;
+    font: {
+      weight: 800;
+      size: 4rem;
+    }
+    text-align: left;
+    margin: {
+      top: 10rem;
+      right: 40rem;
+      left: 3rem;
+    }
+    line-height: 4rem;
+  }
+
+  p {
+    display: inline-block;
+    width: 40rem;
+    text-align: right;
+    font-size: 1.2rem;
+    margin: {
+        top: 7rem;  
+        left: 7rem;
+    }
+  }
+}
+
+/* ...................STICKERS DESTACADOS....................... */
+
+.stickersdestacados {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  background-color: #fff;
+  width: auto;
+  overflow: hidden;
+
+  h2 {
+    font-size: 5rem;
+    color: #11918c;
+    font-weight: 900;
+    line-height: 5rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ................mosaico fotos.................... */
+
+.container {
+  position: relative;
+  filter: drop-shadow(5px 5px 10px rgb(167, 167, 167));
+  margin-left: 3rem;
+
+  .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: rgb(230, 229, 229);
+    border-radius: 20px;
+    overflow: hidden;
+
+    :before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #11918c;
+      clip-path: circle(150px at 80% 20%);
+      transition: 0.5s ease-in-out;
+    }
+
+    :hover:before {
+      clip-path: circle(300px at 80% -20%);
+    }
+
+    :after {
+      content: "Pegarte";
+      position: absolute;
+      top: 45%;
+      left: -10%;
+      font-size: 6rem;
+      font-weight: 900;
+      font-style: italic;
+      color: rgba(95, 95, 95, 0.05);
+    }
+
+    /* -------------img bellota------------ */
+
+    .imgBx {
+      margin-left: 1.2rem;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      z-index: 10000;
+      width: 60%;
+      height: 280px;
+      transition: 0.5s;
+
+      :hover {
+        top: 2%;
+        transform: translateY(0%);
+        width: 60%;
+        height: 260px;
+        margin-left: 2rem;
+      }
+    }
+
+    /*---------------- img olaf---------------*/
+
+    .imgBx__olaf {
+      display: inline-block;
+      margin-left: 6rem;
+      position: absolute;
+      top: 43%;
+      transform: translateY(-50%);
+      z-index: 10000;
+      width: 60%;
+      height: 300px;
+      transition: 0.5s;
+
+      :hover {
+        top: 2%;
+        transform: translateY(0%);
+        width: 60%;
+        height: 260px;
+        margin-left: 6.5rem;
+      }
+    }
+
+    /*..................... img lcdp ...................... */
+    .imgBx__lcdp {
+      margin-left: 1.2rem;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      z-index: 10000;
+      width: 60%;
+      height: 280px;
+      transition: 0.5s;
+
+      :hover {
+        top: 2%;
+        transform: translateY(0%);
+        width: 60%;
+        height: 260px;
+        margin-left: 2rem;
+      }
+    }
+
+    /*..................... img mario ...................... */
+    .imgBx__mario {
+      margin-left: 1.5rem;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      z-index: 10000;
+      width: 60%;
+      height: 280px;
+      transition: 0.5s;
+
+      :hover {
+        top: 2%;
+        transform: translateY(0%);
+        width: 60%;
+        height: 260px;
+        margin-left: 2rem;
+      }
+    }
+
+    /*..................... img papas ...................... */
+    .imgBx__papas {
+      margin-left: 3.4rem;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      z-index: 10000;
+      width: 60%;
+      height: 280px;
+      transition: 0.5s;
+
+      :hover {
+        top: 2%;
+        transform: translateY(0%);
+        width: 60%;
+        height: 260px;
+        margin-left: 4rem;
+      }
+    }
+
+    .contentBx {
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      transition: 1s;
+      z-index: 10;
+
+      :hover {
+        height: 180px;
+      }
+
+      h2 {
+        position: relative;
+        font-size: 2rem;
+        font-weight: 900;
+        letter-spacing: px;
+        color: #11918c;
+      }
+
+      .size {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 20px;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+
+        :hover {
+          opacity: 1;
+          visibility: visible;
+          transition-delay: 0, 5s;
+        }
+
+        h3 {
+          color: #131313;
+          font-weight: 700;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-right: 10px;
+        }
+
+        span {
+          width: 40px;
+          height: 30px;
+          text-align: center;
+          line-height: 33px;
+          font-size: 14px;
+          display: inline-block;
+          color: #fff;
+          background: #11918c;
+          margin: 0 5px;
+          transition: 0.5s;
+          color: #fff;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: 0.5s;
+
+          :hover {
+            background: #033b3a;
+          }
+        }
+
+        a {
+          display: inline-block;
+          padding: 10px 20px;
+          background: #11918c;
+          border-radius: 4px;
+          margin-top: 10px;
+          text-decoration: none;
+          font-weight: 800;
+          color: whitesmoke;
+          opacity: 0%;
+          transform: translateY(50px);
+          transition: 0.5s;
+
+          :hover {
+            opacity: 1;
+            transform: translateY(0px);
+            transition-delay: 0, 75s;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* .................. mosaico flex.................. */
+.gridpadre {
+  display: grid;
+  grid-template-columns: 22rem 22rem 22rem 22rem 22rem;
+  grid-template-rows: auto;
+  margin-bottom: 4rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* .................FOOTER..................... */
+
+.footer {
+  background-color: #11918c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-size: 2rem;
+  width: auto;
+  overflow: hidden;
+
+  .img {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+
+  .footer__menu {
+    ul {
+      padding: 2rem;
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: aliceblue;
+      font-size: rem;
+      padding: 0.3rem;
+      margin-right: 50rem;
+    }
+  }
+
+  .footer__cta {
+    display: flex;
+    flex-direction: column;
+
+    .footer__subtitulo {
+      color: whitesmoke;
+      margin-top: 3.5rem;
+      margin-right: 5rem;
+    }
+
+    .footer__mail {
+      margin-top: 0.2rem;
+    }
+
+    .footer__iconos {
+      margin-top: 0.4rem;
+    }
+    .icono {
+      width: 20px;
+    }
+  }
+}
