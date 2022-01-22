@@ -129,4 +129,441 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
+
+.personalizados__info .info__texto {
+  width: 35rem;
+  margin-right: 2rem;
+}
+
+.personalizados__info .info__texto h3 {
+  font-size: 2rem;
+}
+
+.personalizados__info .info__texto p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.personalizados__info .flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-filter: drop-shadow(5px 5px 10px #c5c4c4);
+          filter: drop-shadow(5px 5px 10px #c5c4c4);
+}
+
+.personalizados__info .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.personalizados__info .flip-card .flip-card-inner :hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.personalizados__info .flip-card .flip-card-front,
+.personalizados__info .flip-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.personalizados__info .flip-card .flip-card-front {
+  background-color: transparent;
+}
+
+.personalizados__info .flip-card .flip-card-back {
+  background-color: transparent;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* ...............precios............. */
+.demo {
+  margin: 3rem;
+}
+
+.demo .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.demo a {
+  text-decoration: none;
+}
+
+.demo .pricingTable {
+  text-align: center;
+  background: #fff;
+  margin: 0 -15px;
+  -webkit-box-shadow: 0 0 10px #ababab;
+          box-shadow: 0 0 10px #ababab;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  color: #cad0de;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.demo .pricingTable:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 1;
+}
+
+.demo .pricingTable .pricingTable-header {
+  padding: 40px 0;
+  background: #f5f6f9;
+  border-radius: 10px 10px 50% 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.demo .pricingTable:hover .pricingTable-header {
+  background: #f08217;
+}
+
+.demo .pricingTable .pricingTable-header i {
+  font-size: 50px;
+  color: #858c9a;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.demo .pricingTable .price-value {
+  font-size: 35px;
+  font-weight: 800;
+  color: #f08217;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.demo .pricingTable .month {
+  display: block;
+  font-size: 14px;
+  color: #cad0de;
+}
+
+.demo .pricingTable:hover .month,
+.demo .pricingTable:hover .price-value,
+.demo .pricingTable:hover .pricingTable-header i {
+  color: #fff;
+}
+
+.demo .pricingTable .heading {
+  margin-top: 1rem;
+  font-size: 24px;
+  color: #f08217;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 800 !important;
+}
+
+.demo .pricingTable .pricing-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.demo .pricingTable .pricing-content ul li {
+  line-height: 30px;
+  color: #a7a8aa;
+}
+
+.demo .pricingTable .pricingTable-signup a {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background: #f08217;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.demo .pricingTable .pricingTable-signup a:hover {
+  -webkit-box-shadow: 0 0 10px #f08217;
+          box-shadow: 0 0 10px #f08217;
+}
+
+.demo .pricingTable.blue .heading,
+.demo .pricingTable.blue .price-value {
+  color: #11918c;
+}
+
+.demo .pricingTable.blue .pricingTable-signup a,
+.demo .pricingTable.blue:hover .pricingTable-header {
+  background: #11918c;
+}
+
+.demo .pricingTable.blue .pricingTable-signup a:hover {
+  -webkit-box-shadow: 0 0 10px #11918c;
+          box-shadow: 0 0 10px #11918c;
+}
+
+.demo .pricingTable.red .heading,
+.demo .pricingTable.red .price-value {
+  color: #ff4b4b;
+}
+
+.demo .pricingTable.red .pricingTable-signup a,
+.demo .pricingTable.red:hover .pricingTable-header {
+  background: #ff4b4b;
+}
+
+.demo .pricingTable.red .pricingTable-signup a:hover {
+  -webkit-box-shadow: 0 0 10px #ff4b4b;
+          box-shadow: 0 0 10px #ff4b4b;
+}
+
+.demo .pricingTable.green .heading,
+.demo .pricingTable.green .price-value {
+  color: #bb2518;
+}
+
+.demo .pricingTable.green .pricingTable-signup a,
+.demo .pricingTable.green:hover .pricingTable-header {
+  background: #bb2518;
+}
+
+.demo .pricingTable.green .pricingTable-signup a:hover {
+  -webkit-box-shadow: 0 0 10px #bb2518;
+          box-shadow: 0 0 10px #bb2518;
+}
+
+.demo .pricingTable.blue:hover .price-value,
+.demo .pricingTable.green:hover .price-value,
+.demo .pricingTable.red:hover .price-value {
+  color: #fff;
+}
+
+/* .................FOOTER..................... */
+.footer {
+  background-color: #11918c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-size: 2rem;
+  width: auto;
+  overflow: hidden;
+}
+
+.footer img {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+.footer .footer__menu ul {
+  padding: 2rem;
+  list-style-type: none;
+}
+
+.footer .footer__menu a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: rem;
+  padding: 0.3rem;
+  margin-right: 50rem;
+}
+
+.footer .footer__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer__cta .footer__subtitulo {
+  color: whitesmoke;
+  margin-top: 3.5rem;
+  margin-right: 5rem;
+}
+
+.footer .footer__cta .footer__mail {
+  margin-top: 0.2rem;
+}
+
+.footer .footer__cta .footer__iconos {
+  margin-top: 0.4rem;
+}
+
+.footer .footer__cta .icono {
+  width: 20px;
+}
+
+/* vista celular */
+@media only screen and (max-width: 981px) {
+  .banner__personalizados h3 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #11918c;
+  }
+  /* ........................seccion 2 personalizados..................... */
+  .personalizados__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4rem;
+    background-color: #edeeee;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .personalizados__info .info__texto {
+    width: 25rem;
+    margin-right: 2rem;
+  }
+  .personalizados__info .info__texto h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .personalizados__info .info__texto p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+  }
+  .personalizados__info .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    -webkit-filter: drop-shadow(5px 5px 10px #c5c4c4);
+            filter: drop-shadow(5px 5px 10px #c5c4c4);
+  }
+  .footer {
+    background-color: #11918c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-size: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    overflow: hidden;
+  }
+  .footer img {
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    align-items: center;
+  }
+  .footer .footer__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0rem;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 10px;
+  }
+  .footer .footer__menu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: rem;
+    padding: 0.3rem;
+    margin-right: 0rem;
+  }
+  .footer .footer__cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer__cta .footer__subtitulo {
+    color: whitesmoke;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    font-size: 10px;
+  }
+  .footer .footer__cta .footer__subtitulo #newsletter {
+    width: 8rem;
+    margin-right: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 1.2rem;
+  }
+  .footer .footer__cta .footer__mail {
+    margin-top: 0.2rem;
+    font-size: 10px;
+  }
+  .footer .footer__cta .footer__iconos {
+    margin-top: 0.4rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer .footer__cta .footer__iconos .icono {
+    width: 20px;
+  }
+}
 /*# sourceMappingURL=estilo-personalizados.css.map */
