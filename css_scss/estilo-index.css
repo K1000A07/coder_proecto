@@ -8,6 +8,7 @@ body {
   font-family: "Spartan", sans-serif !important;
 }
 
+/* ..............HEADER............. */
 .header {
   --bs-bg-opacity: 1;
   background-color: #11918c;
@@ -15,22 +16,23 @@ body {
   overflow: hidden;
 }
 
-.header .ul {
+.header .header__nav ul {
   padding: 2rem;
   list-style-type: none;
 }
 
-.header .li {
+.header .header__nav li {
   display: inline-block;
 }
 
-.header .a {
+.header .header__nav a {
   text-decoration: none;
   color: aliceblue;
   font-size: rem;
   padding: 0.3rem;
 }
 
+/* ...........PRINCIPAL BANNER............... */
 .bannerflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,42 +67,42 @@ body {
   display: inline-block;
   width: 10rem;
   font-size: 10rem;
-  font-weight: 800;
   line-height: 9rem;
+  font-weight: 800;
 }
 
-.bannerflex .banner__subtitulo {
+.bannerflex .bannerflex__texto h2 {
   font-size: 2rem;
 }
 
-.bannerflex .boton {
+.bannerflex .bannerflex__texto .boton {
   text-decoration: none;
-  text-align: center;
   color: #f4f4f4;
   border-radius: 4px;
   width: 8rem;
   height: 2rem;
   background-color: #11918c;
+  text-align: center;
   padding-top: 0.2rem;
   margin-top: 1rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.bannerflex .boton :hover {
+.bannerflex .bannerflex__texto .boton :hover {
   background-color: #033b3a;
   -webkit-transition-delay: 0, 75s;
           transition-delay: 0, 75s;
 }
 
-.bannerflex .boton a {
+.bannerflex .bannerflex__texto .boton a {
   text-decoration: none;
   color: #f4f4f4;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.bannerflex .banner__foto {
+.bannerflex .bannerflex__texto img {
   width: 90rem;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -474,7 +476,7 @@ body {
   overflow: hidden;
 }
 
-.footer .img {
+.footer img {
   display: inline-block;
   margin-top: 2rem;
   margin-left: 5rem;
@@ -518,6 +520,301 @@ body {
 }
 
 .footer .footer__cta .icono {
+  width: 20px;
+}
+
+/* vista tablet? */
+@media only screen and (max-width: 991px) {
+  /* ...........banner principal........... */
+  .bannerflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 0%;
+    background-color: #f4f4f4;
+    height: auto;
+    overflow: hidden;
+    width: auto;
+  }
+  .bannerflex img {
+    margin: 0%;
+    width: 30rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+  }
+  .bannerflex__texto {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 2rem;
+    margin-top: 5rem;
+  }
+  .bannerflex__texto h1 {
+    display: inline-block;
+    width: 10rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 800;
+  }
+  .bannerflex__texto h2 {
+    font-size: 1rem;
+  }
+  .bannerflex__texto .boton {
+    text-decoration: none;
+    color: #f4f4f4;
+    border-radius: 4px;
+    width: 5rem;
+    height: 2rem;
+    background-color: #11918c;
+    text-align: center;
+    padding-top: 0.2rem;
+    margin-top: 0rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .bannerflex__texto .boton a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  /* ..............SECCION 2............... */
+  .sobrenosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    overflow: hidden;
+  }
+  .titulo__contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .titulo__contenedor h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: auto;
+    height: auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .titulo__contenedor p {
+    display: inline-block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* ..........catalogos............... */
+.stickersdestacados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0;
+}
+
+.stickersdestacados .contenedor {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.stickersdestacados .contenedor h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #11918c;
+  font-weight: 900;
+  line-height: 2.5rem;
+  width: 25rem;
+  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.gridpadre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  margin-bottom: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.gridpadre .sticker {
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ...........footer............. */
+.footer {
+  background-color: #11918c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  overflow: hidden;
+}
+
+.footer img {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  margin-left: 0rem;
+  align-items: center;
+}
+
+.footer .footer__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0rem;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 10px;
+}
+
+.footer .footer__menu a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: rem;
+  padding: 0.3rem;
+  margin-right: 0rem;
+}
+
+.footer .footer__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__cta .footer__subtitulo {
+  color: whitesmoke;
+  margin-top: 0rem;
+  margin-right: 0rem;
+  font-size: 10px;
+}
+
+.footer .footer__cta .footer__subtitulo #newsletter {
+  width: 8rem;
+  margin-right: 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.2rem;
+}
+
+.footer .footer__cta .footer__mail {
+  margin-top: 0.2rem;
+  font-size: 10px;
+}
+
+.footer .footer__cta .footer__iconos {
+  margin-top: 0.4rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer .footer__cta .footer__iconos .icono {
   width: 20px;
 }
 /*# sourceMappingURL=estilo-index.css.map */

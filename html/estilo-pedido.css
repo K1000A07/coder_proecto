@@ -1,262 +1,122 @@
-*{  
-    padding: 0px;
-    margin: 0px;
-    }
-    
-    
-        /* .............BODY................. */
-    body{
-        font-family: 'Spartan', sans-serif !important; 
-    }
-    
-    
-    /* ..............HEADER............. */
-    
-    .header{
-        --bs-bg-opacity: 1;
-        background-color: #11918c;
-        width: auto;
-    }
-    /* .header{
-        display: flex;
-        flex-direction: row;
-        background-color: #11918c;
-        background-size: contain;
-        justify-content:space-between;
-        position: fixed;
-        z-index: 6;
-        width: 100%;
-    } */
-    
-    .header__foto{
-        display: inline-block;
-        padding: 1.5rem;
-        margin-left: 1rem;
-        align-content: center;
-    
-    }
-    
-    .header__buscador{
-        display: inline-block;
-        padding: 2rem;
-        margin-right: 3;
-    
-    }
-    
-    /* ......... NAV............*/
-    .header__nav ul{
-        padding: 2rem;
-        list-style-type: none; 
-    }
-    
-    .header__nav li{
-        display: inline-block;
-    }
-    
-    .header__nav a{
-        text-decoration: none;
-        color: aliceblue;
-        font-size: rem;
-        padding: 0.3rem;
-    }
-    
-    
-   /* ..................Banner................... */
-
-.banner{
-    position: relative;
-    display: flex;
-    text-align: center;
-    height: 30rem;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-}
-.banner__personalizados{
-    display: flex;
-    flex-direction: column-reverse;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.banner__personalizados h3{
-    font-size: 5rem;
-    font-weight: 800;
-    color: #11918c;
+/* .............BODY................. */
+body {
+  font-family: 'Spartan', sans-serif !important;
 }
 
-
-.banner__personalizados h4{
-    font-size: 1.5rem;
-    color: #11918c;
+/* ..............HEADER............. */
+.header {
+  --bs-bg-opacity: 1;
+  background-color: #11918c;
 }
 
-.boton__personalizados:hover{
-        background-color: #c9caca;
-        transition-delay:0,75s;
-    }
-    
-.boton__personalizados {
-        text-decoration: none;
-        color: #f4f4f4;
-        border-radius: 4px;
-        width: 8rem;
-        height: 2rem; 
-        background-color: #11918c;
-        text-align: center;
-        padding-top: 0.2rem ;
-        transition: 0.5s;
-    }
-    
-.boton__personalizados a{
-        text-decoration: none;
-        color: #f4f4f4; 
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
-
-.imagen{
-    width:120rem;
+.header .header__nav ul {
+  padding: 2rem;
+  list-style-type: none;
 }
 
-/*...................opciones de stickers.......................*/
-
-.opciones__flex{
-    display: flex;
-    flex-direction: row;
-    align-items: ;
+.header .header__nav li {
+  display: inline-block;
 }
 
-    /* .................FOOTER..................... */
-
-
-.footer{
-    background-color: #11918c ;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-size: 2rem;
+.header .header__nav a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: rem;
+  padding: 0.3rem;
 }
 
-.footer__foto{
-    display: inline-block;
-    margin-top: 2rem;
-    margin-left: 5rem;
+.banner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  height: 30rem;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer__menu ul{
-    padding: 2rem;
-    list-style-type: none;
+.banner .banner__personalizados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
 }
 
-.footer__menu il{
-    display: inline-block;
+.banner .banner__personalizados h3 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #11918c;
 }
 
-.footer__menu a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: rem;
-    padding: 0.3rem;
-    margin-right: 50rem;
+.banner .banner__personalizados h4 {
+  font-size: 1.5rem;
+  color: #11918c;
 }
 
-.footer__cta{
-    display: flex;
-    flex-direction: column;
-
+.banner .boton__personalizados {
+  text-decoration: none;
+  color: #f4f4f4;
+  border-radius: 4px;
+  width: 8rem;
+  height: 2rem;
+  background-color: #11918c;
+  text-align: center;
+  padding-top: 0.2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.footer__subtitulo{
-    color: whitesmoke;
-    margin-top: 3.5rem;
-    margin-right: 5rem;
+.banner .boton__personalizados :hover {
+  background-color: #c9caca;
+  -webkit-transition-delay: 0,75s;
+          transition-delay: 0,75s;
 }
 
-.footer__mail{
-    margin-top: 0.2rem;
+.banner .boton__personalizados a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.footer__iconos{
-    margin-top: 0.4rem;
-}
-.icono{
-    width: 20px;
+.banner .boton__personalizados .imagen {
+  width: 120rem;
 }
 
-
-/* vista celular */
-@media only screen and (max-width: 981px){
-      /* ...........footer............. */
-      .footer{
-        background-color: #11918c ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-size: auto;
-        align-items: center;
-    }
-
-    .footer__foto{
-        display: inline-block;
-        align-items: center;
-        margin-top: 2rem;
-        margin-left: 0rem;
-        align-items: center;
-    }
-
-    .footer__menu ul{
-        display: flex;
-        flex-direction: row;
-        padding: 0rem;
-        list-style-type: none;
-        text-align: center;
-        margin-top: 2rem;
-        font-size: 10px;
-    }
-    
-    
-    .footer__menu a{
-        text-decoration: none;
-        color: aliceblue;
-        font-size: rem;
-        padding: 0.3rem;
-        margin-right: 0rem;
-    }
-
-    .footer__cta{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__subtitulo{
-        color: whitesmoke;
-        margin-top: 0rem;
-        margin-right: 0rem;
-        font-size: 10px;
-    }
-    
-    #newsletter{
-       width: 8rem;
-       margin-right: 0rem;
-       align-items: center;
-       margin-left: 1.2rem;
-    }
-    .footer__mail{
-        margin-top: 0.2rem;
-        font-size: 10px;
-    }
-    
-    .footer__iconos{
-        margin-top: 0.4rem;
-        margin-left: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .icono{
-        width: 20px;
-    }
+.opciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+/*# sourceMappingURL=estilo-pedido.css.map */

@@ -8,31 +8,35 @@ body {
   font-family: "Spartan", sans-serif !important;
 }
 
-// ................header................
+/* ..............HEADER............. */
+//
+
 .header {
   --bs-bg-opacity: 1;
   background-color: #11918c;
   width: auto;
   overflow: hidden;
 
-  .ul {
-    padding: 2rem;
-    list-style-type: none;
-  }
+  .header__nav {
+    ul {
+      padding: 2rem;
+      list-style-type: none;
+    }
 
-  .li {
-    display: inline-block;
-  }
+    li {
+      display: inline-block;
+    }
 
-  .a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: rem;
-    padding: 0.3rem;
+    a {
+      text-decoration: none;
+      color: aliceblue;
+      font-size: rem;
+      padding: 0.3rem;
+    }
   }
 }
 
-// ............banner principal............
+/* ...........PRINCIPAL BANNER............... */
 
 .bannerflex {
   display: flex;
@@ -53,51 +57,44 @@ body {
     h1 {
       display: inline-block;
       width: 10rem;
-      font: {
-        size: 10rem;
-        weight: 800;
-      }
+      font-size: 10rem;
       line-height: 9rem;
-    }
-  }
-
-  .banner__subtitulo {
-    font-size: 2rem;
-  }
-
-  .boton {
-    text: {
-      decoration: none;
-      align: center;
-    }
-    color: #f4f4f4;
-    border-radius: 4px;
-    width: 8rem;
-    height: 2rem;
-    background-color: #11918c;
-    padding-top: 0.2rem;
-    margin-top: 1rem;
-    transition: 0.5s;
-
-    :hover {
-      background-color: #033b3a;
-      transition-delay: 0, 75s;
+      font-weight: 800;
     }
 
-    a {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .boton {
       text-decoration: none;
       color: #f4f4f4;
-      font: {
-        size: 1.2rem;
-        weight: 600;
+      border-radius: 4px;
+      width: 8rem;
+      height: 2rem;
+      background-color: #11918c;
+      text-align: center;
+      padding-top: 0.2rem;
+      margin-top: 1rem;
+      transition: 0.5s;
+
+      :hover {
+        background-color: #033b3a;
+        transition-delay: 0, 75s;
+      }
+
+      a {
+        text-decoration: none;
+        color: #f4f4f4;
+        font-size: 1.2rem;
+        font-weight: 600;
       }
     }
-  }
-  .banner__foto {
-    width: 90rem;
-    margin: {
-      top: 0%;
-      bottom: 0%;
+
+    img {
+      width: 90rem;
+      margin-top: 0%;
+      margin-bottom: 0%;
     }
   }
 }
@@ -118,16 +115,12 @@ body {
     width: 10rem;
     height: 3rem;
     justify-content: center;
-    font: {
-      weight: 800;
-      size: 4rem;
-    }
+    font-weight: 800;
+    font-size: 4rem;
     text-align: left;
-    margin: {
-      top: 10rem;
-      right: 40rem;
-      left: 3rem;
-    }
+    margin-top: 10rem;
+    margin-right: 40rem;
+    margin-left: 3rem;
     line-height: 4rem;
   }
 
@@ -136,10 +129,8 @@ body {
     width: 40rem;
     text-align: right;
     font-size: 1.2rem;
-    margin: {
-        top: 7rem;  
-        left: 7rem;
-    }
+    margin-top: 7rem;
+    margin-left: 7rem;
   }
 }
 
@@ -225,7 +216,6 @@ body {
         margin-left: 2rem;
       }
     }
-
     /*---------------- img olaf---------------*/
 
     .imgBx__olaf {
@@ -420,7 +410,7 @@ body {
   width: auto;
   overflow: hidden;
 
-  .img {
+  img {
     display: inline-block;
     margin-top: 2rem;
     margin-left: 5rem;
@@ -460,6 +450,236 @@ body {
     }
     .icono {
       width: 20px;
+    }
+  }
+}
+
+/* vista tablet? */
+@media only screen and (max-width: 991px) {
+  /* ...........banner principal........... */
+  .bannerflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0%;
+    background-color: #f4f4f4;
+    height: auto;
+    overflow: hidden;
+    width: auto;
+
+    img {
+      margin: 0%;
+      width: 30rem;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+
+  .bannerflex__texto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    margin-top: 5rem;
+
+    h1 {
+      display: inline-block;
+      width: 10rem;
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    .boton {
+      text-decoration: none;
+      color: #f4f4f4;
+      border-radius: 4px;
+      width: 5rem;
+      height: 2rem;
+      background-color: #11918c;
+      text-align: center;
+      padding-top: 0.2rem;
+      margin-top: 0rem;
+      transition: 0.5s;
+
+      a {
+        text-decoration: none;
+        color: #f4f4f4;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  /* ..............SECCION 2............... */
+
+  .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 0;
+    justify-content: center;
+    width: auto;
+    overflow: hidden;
+  }
+  .titulo__contenedor {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      width: auto;
+      height: auto;
+      text-align: center;
+      align-items: center;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    p {
+      display: inline-block;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+/* ..........catalogos............... */
+
+.stickersdestacados {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: auto;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+
+  .contenedor {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    h2 {
+      display: inline-block;
+      font-size: 2.5rem;
+      color: #11918c;
+      font-weight: 900;
+      line-height: 2.5rem;
+      width: 25rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.gridpadre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .sticker {
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+}
+
+/* ...........footer............. */
+.footer {
+  background-color: #11918c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: auto;
+  align-items: center;
+  width: auto;
+  overflow: hidden;
+
+  img {
+    display: inline-block;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    align-items: center;
+  }
+
+  .footer__menu {
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding: 0rem;
+      list-style-type: none;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: aliceblue;
+      font-size: rem;
+      padding: 0.3rem;
+      margin-right: 0rem;
+    }
+  }
+
+  .footer__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer__subtitulo {
+      color: whitesmoke;
+      margin-top: 0rem;
+      margin-right: 0rem;
+      font-size: 10px;
+
+      #newsletter {
+        width: 8rem;
+        margin-right: 0rem;
+        align-items: center;
+        margin-left: 1.2rem;
+      }
+    }
+
+    .footer__mail {
+      margin-top: 0.2rem;
+      font-size: 10px;
+    }
+
+    .footer__iconos {
+      margin-top: 0.4rem;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+
+      .icono {
+        width: 20px;
+      }
     }
   }
 }
