@@ -63,6 +63,7 @@
       flex-direction: row;
       justify-content: flex-start;
       padding: 2rem;
+      width: 100%;
 
       .tamaño{
           margin-left: 0.5rem;
@@ -79,4 +80,30 @@
     justify-items: center;
     margin-bottom: 2rem;
 
+}
+
+
+/* MEDIAS 1 BEAKPOINT */
+@media only screen and (max-width: 991px){ 
+.mosaico{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+}
+
+@media only screen and (max-width: 350px){ 
+    .mosaico{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 4rem;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
 }
