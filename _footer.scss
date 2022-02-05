@@ -1,0 +1,65 @@
+/* .................FOOTER..................... */
+
+.footer {
+    background-color: #11918c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-size: 2rem;
+    width: 100%;
+    overflow: hidden;
+
+    .footer__foto {
+        width: auto;
+        margin-left: 3rem;
+        margin-top: 2rem;
+
+        img {
+            width: 5rem;
+        }
+    }
+
+    .footer__menu {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        width: 100%;
+        
+        ul{
+            padding: 0%;
+        }
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: rem;
+            padding: 0.3rem;
+        }
+    }
+
+    .footer__cta{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: 100%;
+    
+        .footer__subtitulo{
+            color: whitesmoke;
+            font-size: 10px;
+            margin-top: 2rem;
+        }
+        #newsletter{
+            width: 8rem;
+            margin-right: 0rem;
+            align-items: center;
+            margin-left: 1.2rem;
+         }
+         .footer__mail{
+             margin-top: 0.2rem;
+             font-size: 10px;
+         }
+    }
+}
