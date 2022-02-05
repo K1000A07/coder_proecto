@@ -1,19 +1,26 @@
 {
   "name": "desafio1",
   "version": "1.0.0",
-  "description": "desafio coder",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+   },
+
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/K1000A07/coder_proecto.git"
   },
-  "author": "Camila Manucci",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/K1000A07/coder_proecto/issues"
   },
-  "homepage": "https://github.com/K1000A07/coder_proecto#readme"
+  "homepage": "https://github.com/K1000A07/coder_proecto#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
 }

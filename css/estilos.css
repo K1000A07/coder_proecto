@@ -1,0 +1,546 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* .............BODY................. */
+body {
+  font-family: 'Spartan', sans-serif !important;
+}
+
+/* ..............HEADER............. */
+/* importado de bt */
+.header {
+  --bs-bg-opacity: 1;
+  background-color: #11918c;
+  width: auto;
+  overflow: hidden;
+}
+
+.header__nav ul {
+  padding: 2rem;
+  list-style-type: none;
+}
+
+.header__nav li {
+  display: inline-block;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: rem;
+  padding: 0.3rem;
+}
+
+/* ...........PRINCIPAL BANNER............... */
+.bannerflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0%;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.bannerflex .bannerflex__texto {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5rem;
+  margin-top: 6rem;
+}
+
+.bannerflex .bannerflex__texto h1 {
+  display: inline-block;
+  width: 10rem;
+  font-size: 7rem;
+  line-height: 7rem;
+  font-weight: 800;
+}
+
+.bannerflex .bannerflex__texto .h2 {
+  font-size: 2rem;
+}
+
+.bannerflex .bannerflex__texto .boton:hover {
+  background-color: #033b3a;
+  -webkit-transition-delay: 0, 75s;
+          transition-delay: 0, 75s;
+}
+
+.bannerflex .bannerflex__texto .boton {
+  text-decoration: none;
+  color: #f4f4f4;
+  border-radius: 4px;
+  width: 8rem;
+  height: 2rem;
+  background-color: #11918c;
+  text-align: center;
+  padding-top: 0.2rem;
+  margin-top: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bannerflex .bannerflex__texto .boton a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bannerflex img {
+  width: 55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  margin: 0%;
+}
+
+/* ..............SECCION 2............... */
+.sobrenosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #11918c;
+  height: 30rem;
+  color: whitesmoke;
+  width: 100%;
+}
+
+.sobrenosotros h2 {
+  display: inline-block;
+  width: 40rem;
+  height: auto;
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: left;
+  line-height: 4rem;
+  margin-left: 1rem;
+}
+
+.sobrenosotros p {
+  display: inline-block;
+  width: 40rem;
+  text-align: right;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-left: 4rem;
+}
+
+/* ...................STICKERS DESTACADOS....................... */
+.stickersdestacados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem;
+  background-color: #fff;
+  width: auto;
+  overflow: hidden;
+}
+
+.stickersdestacados .contenedor h2 {
+  width: 40rem;
+  height: auto;
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: left;
+  line-height: 4rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #11918c;
+}
+
+/* ................mosaico fotos.................... */
+.container {
+  position: relative;
+  -webkit-filter: drop-shadow(5px 5px 10px #a7a7a7);
+          filter: drop-shadow(5px 5px 10px #a7a7a7);
+}
+
+.container .card {
+  position: relative;
+  width: 220px;
+  height: 350px;
+  background: #e6e5e5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #11918c;
+  -webkit-clip-path: circle(150px at 80% 7%);
+          clip-path: circle(150px at 80% 7%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  -webkit-clip-path: circle(200px at 80% -20%);
+          clip-path: circle(200px at 80% -20%);
+}
+
+.container .card:after {
+  content: 'Pegarte';
+  position: absolute;
+  top: 45%;
+  left: -10%;
+  font-size: 6rem;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(95, 95, 95, 0.05);
+}
+
+/* .................. mosaico flex.................. */
+.gridpadre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15rem 15rem 15rem 15rem 15rem;
+      grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  margin-bottom: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+/* -------------img bellota------------ */
+.container .card .imgBx {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10000;
+  width: 30%;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 1rem;
+}
+
+.container .card:hover .imgBx {
+  top: 7%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 60%;
+  height: 180px;
+  margin-left: 1rem;
+}
+
+/*---------------- img olaf---------------*/
+.container .card .imgBx__olaf {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 220px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 4rem;
+}
+
+.container .card:hover .imgBx__olaf {
+  top: 2%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 60%;
+  height: 200px;
+  margin-left: 4rem;
+}
+
+/*..................... img lcdp ...................... */
+.container .card .imgBx__lcdp {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 210px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 0.8rem;
+}
+
+.container .card:hover .imgBx__lcdp {
+  top: 5%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 60%;
+  height: 190px;
+  margin-left: 1.2rem;
+}
+
+/*..................... img mario ...................... */
+.container .card .imgBx__mario {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 1rem;
+}
+
+.container .card:hover .imgBx__mario {
+  top: 7%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 60%;
+  height: 180px;
+  margin-left: 1.3rem;
+}
+
+/*..................... img papas ...................... */
+.container .card .imgBx__papas {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 2rem;
+}
+
+.container .card:hover .imgBx__papas {
+  top: 7%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 60%;
+  height: 180px;
+  margin-left: 2.2rem;
+}
+
+/* ............... Catiner en gral................... */
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx {
+  height: 140px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: px;
+  color: #11918c;
+  margin-top: 0.5rem;
+}
+
+.container .card .contentBx .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0, 5s;
+          transition-delay: 0, 5s;
+}
+
+.container .card .contentBx .size h3 {
+  color: #131313;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 10px;
+  display: inline-block;
+  color: #fff;
+  background: #11918c;
+  margin: 0 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container .card .contentBx .size span:hover {
+  background: #033b3a;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #11918c;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 800;
+  color: whitesmoke;
+  opacity: 0%;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-transition-delay: 0, 75s;
+          transition-delay: 0, 75s;
+}
+
+/* .................FOOTER..................... */
+.footer {
+  background-color: #11918c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-size: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer .footer__foto {
+  width: auto;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.footer .footer__foto img {
+  width: 5rem;
+}
+
+.footer .footer__menu {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.footer .footer__menu ul {
+  padding: 0%;
+}
+
+.footer .footer__menu li {
+  list-style-type: none;
+}
+
+.footer .footer__menu a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: rem;
+  padding: 0.3rem;
+}
+
+.footer .footer__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.footer .footer__cta .footer__subtitulo {
+  color: whitesmoke;
+  font-size: 10px;
+  margin-top: 2rem;
+}
+
+.footer .footer__cta #newsletter {
+  width: 8rem;
+  margin-right: 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.2rem;
+}
+
+.footer .footer__cta .footer__mail {
+  margin-top: 0.2rem;
+  font-size: 10px;
+}
+/*# sourceMappingURL=estilos.css.map */
