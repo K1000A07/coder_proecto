@@ -632,7 +632,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.proximamente .proximamente__texto .botonesmap a {
+.proximamente .botonesmap a {
   text-decoration: none;
   color: aliceblue;
   font-weight: 800;
@@ -641,7 +641,7 @@ a {
   padding: 0.5rem;
 }
 
-.proximamente .proximamente__texto .proximamente__foto {
+.proximamente .proximamente__foto {
   margin-right: 3rem;
 }
 

@@ -1,3 +1,5 @@
+@import "mixin";
+
 .proximamente {
   display: flex;
   flex-direction: row;
@@ -20,51 +22,51 @@
       text-align: left;
       color: #11918c;
     }
-
-    h4 {
-      font-size: 1rem;
-      width: 20rem;
-      margin-bottom: 2rem;
+    
+    h4{
+      @include parrafos;
     }
+  
 
-    .botonesmap {
-      a {
-        text-decoration: none;
-        color: aliceblue;
-        font-weight: 800;
-        border-radius: 4px;
-        margin-left: 1rem;
-        padding: 0.5rem;
-      }
-    }
+  }
 
-    .proximamente__foto {
-      margin-right: 3rem;
+  .botonesmap {
+    a {
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: 800;
+      border-radius: 4px;
+      margin-left: 1rem;
+      padding: 0.5rem;
     }
+  }
+
+  .proximamente__foto {
+    margin-right: 3rem;
   }
 }
 
-  @media only screen and (max-width: 981px) {
-    .proximamente {
+@media only screen and (max-width: 981px) {
+  .proximamente {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+    .proximamente__texto {
       display: flex;
       flex-direction: column;
-      height: auto;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      overflow: hidden;
+      margin-left: 0%;
+      margin-top: 3rem;
+      margin-left: 10rem;
+    }
 
-      .proximamente__texto {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0%;
-        margin-top: 3rem;
-        margin-left: 10rem;
-      }
-
-      .proximamente__foto {
-        margin-right: 0;
-        margin-top: 3rem;
-      }
+    .proximamente__foto {
+      margin-right: 0;
+      margin-top: 3rem;
     }
   }
+}
