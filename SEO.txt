@@ -1,3 +1,12 @@
 SEO de mi pag
 
 -Agregue descipción y Key words.
+(<meta name="description" content="Tienda Online de Stickers de Vinilo Resistentes al Agua y Personalizados">
+  <meta name="keywords"  content="STICKERS, DECALS, CALCOMANIAS, ECOMMERCE, TIENDA ONLINE, DISEÑO, STICKERS PERSONALIZADOS">)
+
+-Aguegué titulos en html
+  *index:  <title class="animate__animated animate__fadeInLeft"> SOMOS PEGARTE STICKERS</title>
+  *pedido: <title class="subtitulo"> Pedido de Stickes</title>    
+  *personalizados: <title class="subtitulo"> Sticker Personalizados</title>
+
+-Utilice las etiquetas h para mejor jerarquización del contenido, y empareje los estilos de estiquetas, por ejemplo: mismo tamaño de h2 para titulos de paginas.
