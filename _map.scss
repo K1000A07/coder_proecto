@@ -1,0 +1,8 @@
+// MAP REDES
+$redes: ( facebook: rgb(15, 15, 85), instagram:  purple, pinterest: red); 
+
+@each $blue, $color in $redes {
+.btn--#{$blue} {
+background-color:  $color;
+}
+}
