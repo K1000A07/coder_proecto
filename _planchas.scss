@@ -30,7 +30,29 @@
   }
 
   .proximamente__foto{
-      background-color: #11918c;
       margin-right: 3rem;
   }
+}
+
+@media only screen and (max-width: 981px){
+  .proximamente {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+    .proximamente__texto {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0%;
+      margin-top: 3rem;
+      margin-left: 10rem;
+    }
+    .proximamente__foto{
+      margin-right: 0;
+  }
+}
 }
