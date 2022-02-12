@@ -2,7 +2,7 @@
 /* ..............HEADER............. */
 /* importado de bt */
 .header {
-  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 3;
   background-color: #11918c;
   width: auto;
   overflow: hidden;
@@ -578,10 +578,12 @@ a {
   font-weight: 800;
   color: #11918c;
   margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 .contacto .contacto__subtitulo h4 {
   font-size: 1.5rem;
+  margin-left: 2rem;
 }
 
 .formulario {
