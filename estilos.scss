@@ -1,4 +1,3 @@
-
 // Imports
 @import "header";
 @import "footer";
@@ -9,445 +8,430 @@
 @import "map";
 @import "mixin";
 
-
-// // Variables 
+// // Variables
 // $color-principal:#11918c;
 
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
-
 
 /* .............BODY................. */
 body {
-    font-family: 'Spartan', sans-serif !important;
+  font-family: "Spartan", sans-serif !important;
 }
-
 
 /* ...........PRINCIPAL BANNER............... */
 
 .bannerflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0%;
-    background-color: #f4f4f4;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0%;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
 
+  .bannerflex__texto {
+    position: relative;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 6rem;
 
-    .bannerflex__texto {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin-left: 5rem;
-        margin-top: 6rem;
-
-        title {
-            display: inline-block;
-            width: 10rem;
-            font-size: 7rem;
-            line-height: 7rem;
-            font-weight: 800;
-        }
-
-        .h2 {
-            font-size: 2rem;
-        }
-
-        .boton:hover {
-            background-color: #033b3a;
-            transition-delay: 0, 75s;
-        }
-
-        .boton {
-            text-decoration: none;
-            color: #f4f4f4;
-            border-radius: 4px;
-            width: 8rem;
-            height: 2rem;
-            background-color: #11918c;
-            text-align: center;
-            padding-top: 0.2rem;
-            margin-top: 1rem;
-            transition: 0.5s;
-
-            a {
-                text-decoration: none;
-                color: #f4f4f4;
-                font-size: 1.2rem;
-                font-weight: 600;
-            }
-        }
+    title {
+      display: inline-block;
+      width: 10rem;
+      font-size: 7rem;
+      line-height: 7rem;
+      font-weight: 800;
     }
+
+    .h2 {
+      font-size: 2rem;
+    }
+
+    .boton:hover {
+      background-color: #033b3a;
+      transition-delay: 0, 75s;
+    }
+
+    .boton {
+      text-decoration: none;
+      color: #f4f4f4;
+      border-radius: 4px;
+      width: 8rem;
+      height: 2rem;
+      background-color: #11918c;
+      text-align: center;
+      padding-top: 0.2rem;
+      margin-top: 1rem;
+      transition: 0.5s;
+
+      a {
+        text-decoration: none;
+        color: #f4f4f4;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .bannerflex__foto {
+    width: auto;
+    display: inline;
+    align-items: left;
+    overflow: visible;
+    height: 100%;
 
     img {
-        width: 55rem;
-        display: flex;
-        align-items: right;
-        margin: 0%;
+      width: 100%;
+      height: auto;
     }
-
+  }
 }
 
 /* ..............SECCION 2............... */
-
-
 .sobrenosotros {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    background-color: #11918c;
-    height: 30rem;
-    color: whitesmoke;
-    width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: #11918c;
+  height: 30rem;
+  width: 100%;
 
-    h2 {
-        display: inline-block;
-        width: 40rem;
-        height: auto;
-        font-weight: 800;
-        font-size: 4rem;
-        text-align: left;
-        line-height: 4rem;
-        margin-left: 1rem;
-    }
+  h2 {
+    display: inline-block;
+    width: 40rem;
+    height: auto;
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: left;
+    color: #f4f4f4;
+    line-height: 4rem;
+  }
 
-    p {
-        display: inline-block;
-        width: 40rem;
-        text-align: right;
-        font-size: 1.2rem;
-        margin-right: 1rem;
-        margin-left: 4rem;
-    }
+  p {
+    display: inline-block;
+    width: 40rem;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    color: #f4f4f4;
+  }
 }
+
 
 /* ...................STICKERS DESTACADOS....................... */
 
 .stickersdestacados {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem;
-    background-color: #fff;
-    width: auto;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  background-color: #fff;
+  width: auto;
+  overflow: hidden;
 
-    .contenedor {
-        h2 {
-            width: 40rem;
-            height: auto;
-            font-weight: 800;
-            font-size: 4rem;
-            text-align: left;
-            line-height: 4rem;
-            margin-left: 1rem;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            color: #11918c;
-        }
+  .contenedor {
+    h2 {
+      width: 40rem;
+      height: auto;
+      font-weight: 800;
+      font-size: 4rem;
+      text-align: left;
+      line-height: 4rem;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      color: #11918c;
     }
+  }
 }
-
 
 /* ................mosaico fotos.................... */
 
 .container {
-    position: relative;
-    filter: drop-shadow(5px 5px 10px rgb(167, 167, 167));
+  position: relative;
+  filter: drop-shadow(5px 5px 10px rgb(167, 167, 167));
 }
 
 .container .card {
-    position: relative;
-    width: 220px;
-    height: 350px;
-    background: rgb(230, 229, 229);
-    border-radius: 20px;
-    overflow: hidden;
+  position: relative;
+  width: 220px;
+  height: 350px;
+  background: rgb(230, 229, 229);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .container .card:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #11918c;
-    clip-path: circle(150px at 80% 7%);
-    transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #11918c;
+  clip-path: circle(150px at 80% 7%);
+  transition: 0.5s ease-in-out;
 }
 
 .container .card:hover:before {
-    clip-path: circle(200px at 80% -20%);
+  clip-path: circle(200px at 80% -20%);
 }
 
 .container .card:after {
-    content: 'Pegarte';
-    position: absolute;
-    top: 45%;
-    left: -10%;
-    font-size: 6rem;
-    font-weight: 900;
-    font-style: italic;
-    color: rgba(95, 95, 95, 0.05)
+  content: "Pegarte";
+  position: absolute;
+  top: 45%;
+  left: -10%;
+  font-size: 6rem;
+  font-weight: 900;
+  font-style: italic;
+  color: rgba(95, 95, 95, 0.05);
 }
 
 /* .................. mosaico flex.................. */
 .gridpadre {
-    display: grid;
-    grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
-    grid-template-rows: auto;
-    margin-bottom: 4rem;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
+  grid-template-rows: auto;
+  margin-bottom: 4rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
-
-
 
 /* -------------img bellota------------ */
 
-
 .container .card .imgBx {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10000;
-    width: 30%;
-    height: 200px;
-    transition: 0.5s;
-    margin-left: 1rem;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 30%;
+  height: 200px;
+  transition: 0.5s;
+  margin-left: 1rem;
 }
 
 .container .card:hover .imgBx {
-    top: 7%;
-    transform: translateY(0%);
-    width: 60%;
-    height: 180px;
-    margin-left: 1rem;
+  top: 7%;
+  transform: translateY(0%);
+  width: 60%;
+  height: 180px;
+  margin-left: 1rem;
 }
 
 /*---------------- img olaf---------------*/
 
 .container .card .imgBx__olaf {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10000;
-    width: 60%;
-    height: 220px;
-    transition: 0.5s;
-    margin-left: 4rem;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 220px;
+  transition: 0.5s;
+  margin-left: 4rem;
 }
 
 .container .card:hover .imgBx__olaf {
-    top: 2%;
-    transform: translateY(0%);
-    width: 60%;
-    height: 200px;
-    margin-left: 4rem;
+  top: 2%;
+  transform: translateY(0%);
+  width: 60%;
+  height: 200px;
+  margin-left: 4rem;
 }
 
 /*..................... img lcdp ...................... */
 
 .container .card .imgBx__lcdp {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10000;
-    width: 60%;
-    height: 210px;
-    transition: 0.5s;
-    margin-left: 0.8rem;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 210px;
+  transition: 0.5s;
+  margin-left: 0.8rem;
 }
 
 .container .card:hover .imgBx__lcdp {
-    top: 5%;
-    transform: translateY(0%);
-    width: 60%;
-    height: 190px;
-    margin-left: 1.2rem;
+  top: 5%;
+  transform: translateY(0%);
+  width: 60%;
+  height: 190px;
+  margin-left: 1.2rem;
 }
 
 /*..................... img mario ...................... */
 
 .container .card .imgBx__mario {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10000;
-    width: 60%;
-    height: 200px;
-    transition: 0.5s;
-    margin-left: 1rem;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 200px;
+  transition: 0.5s;
+  margin-left: 1rem;
 }
 
 .container .card:hover .imgBx__mario {
-    top: 7%;
-    transform: translateY(0%);
-    width: 60%;
-    height: 180px;
-    margin-left: 1.3rem;
+  top: 7%;
+  transform: translateY(0%);
+  width: 60%;
+  height: 180px;
+  margin-left: 1.3rem;
 }
 
 /*..................... img papas ...................... */
 
 .container .card .imgBx__papas {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    z-index: 10000;
-    width: 60%;
-    height: 200px;
-    transition: 0.5s;
-    margin-left: 2rem;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 60%;
+  height: 200px;
+  transition: 0.5s;
+  margin-left: 2rem;
 }
 
 .container .card:hover .imgBx__papas {
-    top: 7%;
-    transform: translateY(0%);
-    width: 60%;
-    height: 180px;
-    margin-left: 2.2rem;
+  top: 7%;
+  transform: translateY(0%);
+  width: 60%;
+  height: 180px;
+  margin-left: 2.2rem;
 }
 
 /* ............... Catiner en gral................... */
 .container .card .contentBx {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    transition: 1s;
-    z-index: 10;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
 }
 
 .container .card:hover .contentBx {
-    height: 140px;
+  height: 140px;
 }
 
 .container .card .contentBx h2 {
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: px;
-    color: #11918c;
-    margin-top: 0.5rem;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: px;
+  color: #11918c;
+  margin-top: 0.5rem;
 }
 
 .container .card .contentBx .size {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 8px;
-    transition: 0.5s;
-    opacity: 0;
-    visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 8px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .container .card:hover .contentBx .size {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0, 5s;
-
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0, 5s;
 }
 
 .container .card .contentBx .size h3 {
-    color: #131313;
-    font-weight: 700;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-right: 10px;
+  color: #131313;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 10px;
 }
 
-
 .container .card .contentBx .size span {
-    width: 30px;
-    height: 25px;
-    text-align: center;
-    line-height: 25px;
-    font-size: 10px;
-    display: inline-block;
-    color: #fff;
-    background: #11918c;
-    margin: 0 2px;
-    transition: 0.5s;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.5s;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 10px;
+  display: inline-block;
+  color: #fff;
+  background: #11918c;
+  margin: 0 2px;
+  transition: 0.5s;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .container .card .contentBx .size span:hover {
-    background: #033b3a;
+  background: #033b3a;
 }
 
 .container .card .contentBx a {
-    display: inline-block;
-    padding: 5px 10px;
-    background: #11918c;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 800;
-    color: whitesmoke;
-    opacity: 0%;
-    transform: translateY(60px);
-    transition: 0.5s;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #11918c;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 800;
+  color: whitesmoke;
+  opacity: 0%;
+  transform: translateY(60px);
+  transition: 0.5s;
 }
 
-
 .container .card:hover .contentBx a {
-    opacity: 1;
-    transform: translateY(2px);
-    transition-delay: 0, 75s;
-
+  opacity: 1;
+  transform: translateY(2px);
+  transition-delay: 0, 75s;
 }
 
 /* MEDIAS 1 BEAKPOINT */
-@media only screen and (max-width: 991px){ 
+@media only screen and (max-width: 991px) {
+  /* ...........banner principal........... */
+  .bannerflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0%;
+    background-color: #f4f4f4;
+    height: auto;
+    overflow: hidden;
+    width: auto;
+  }
 
-    /* ...........banner principal........... */
-    .bannerflex{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        margin-top: 0%;
-        background-color: #f4f4f4;
-        height: auto;
-        overflow: hidden;
-        width: auto;
+  .bannerflex__texto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+
+    h1 {
+      width: 10rem;
+      font-size: 2rem;
+      line-height: 3.5rem;
+      font-weight: 800;
     }
-    
-    .bannerflex__texto{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin-top: 5rem;
 
-        h1{
-            width: 10rem;
-            font-size: 2rem;
-            line-height: 3.5rem;
-            font-weight: 800;
-        }
-
-        h2{
-            font-size: 1rem;
-        }
-
-        
+    h2 {
+      font-size: 1rem;
     }
-    
-    
-    
+  }
 
-/* ..............SECCION 2............... */
+  /* ..............SECCION 2............... */
 
-.sobrenosotros{
+  .sobrenosotros {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -457,14 +441,13 @@ body {
     justify-content: center;
     width: auto;
     overflow: hidden;
-}
+  }
 
-.titulo__contenedor{
+  .titulo__contenedor {
     display: flex;
     align-items: center;
-
-}
-.sobrenosotros__titulo{
+  }
+  .sobrenosotros__titulo {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -477,9 +460,9 @@ body {
     align-items: center;
     font-size: 1rem;
     line-height: 2.5rem;
-}
+  }
 
-.sobrenosotros__texto{
+  .sobrenosotros__texto {
     display: inline-block;
     justify-content: center;
     margin-top: 1rem;
@@ -490,123 +473,119 @@ body {
     height: auto;
     font-size: 1rem;
     text-align: center;
-}
+  }
 
+  /* ..........catalogos............... */
 
-    /* ..........catalogos............... */
+  .contenedor {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 
-    .contenedor{
-     width: 100%;
-     height: 100%;
-     overflow: hidden;
-    }
+  .gridpadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
 
-    .gridpadre{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        margin-bottom: 4rem;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    
-    }
+  .sticker {
+    margin-bottom: 1rem;
+    align-items: center;
+  }
 
-    .sticker{
-        margin-bottom: 1rem;
-        align-items: center;
-    }
+  .stickersdestacados {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: auto;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+  }
+  .stickersdestacados__titulo {
+    display: inline;
+    font-size: 2.5rem;
+    color: #11918c;
+    font-weight: 900;
+    line-height: 2.5rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
 
-    .stickersdestacados{
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        width: auto;
-        align-items: center;
-        justify-items: center;
-        margin: 0;
-        
-    }
-     .stickersdestacados__titulo{
-        display: inline;
-        font-size: 2.5rem;
-        color: #11918c;
-        font-weight: 900;
-        line-height: 2.5rem;
-        width: 25rem;
-        margin-bottom: 2rem;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin-top: 2rem;
-     }
+  /* ...........footer............. */
+  .footer {
+    background-color: #11918c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: auto;
+    align-items: center;
+    width: auto;
+    overflow: hidden;
+  }
 
-   
-    /* ...........footer............. */
-    .footer{
-        background-color: #11918c ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-size: auto;
-        align-items: center;
-        width: auto;
-        overflow: hidden;
-    }
+  .footer__foto {
+    display: inline-block;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    align-items: center;
+    color: #f4f4f4;
+  }
 
-    .footer__foto{
-        display: inline-block;
-        align-items: center;
-        margin-top: 2rem;
-        margin-left: 0rem;
-        align-items: center;
-    }
+  .footer__menu {
+    margin-left: 20rem;
+  }
 
-    .footer__menu{
-        margin-left: 20rem;
-    }
+  .footer__menu ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 10px;
+  }
 
-    .footer__menu ul{
-        display: flex;
-        flex-direction: row;
-        padding: 0rem;
-        list-style-type: none;
-        text-align: center;
-        margin-top: 2rem;
-        font-size: 10px;
-    }
+  .footer__menu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: rem;
+    padding: 0.3rem;
+    margin-right: 0rem;
+  }
 
-    
-    .footer__menu a{
-        text-decoration: none;
-        color: aliceblue;
-        font-size: rem;
-        padding: 0.3rem;
-        margin-right: 0rem;
-    }
+  .footer__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer__cta{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer__subtitulo {
+    color: whitesmoke;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    font-size: 10px;
+  }
 
-    .footer__subtitulo{
-        color: whitesmoke;
-        margin-top: 0rem;
-        margin-right: 0rem;
-        font-size: 10px;
-    }
-    
-    #newsletter{
-       width: 8rem;
-       margin-right: 0rem;
-       align-items: center;
-       margin-left: 1.2rem;
-    }
-    .footer__mail{
-        margin-top: 0.2rem;
-        margin-bottom: 10rem;
-        font-size: 10px;
-    }
+  #newsletter {
+    width: 8rem;
+    margin-right: 0rem;
+    align-items: center;
+    margin-left: 1.2rem;
+  }
+  .footer__mail {
+    margin-top: 0.2rem;
+    margin-bottom: 10rem;
+    font-size: 10px;
+  }
 }

@@ -704,7 +704,7 @@ a {
 
 /* .............BODY................. */
 body {
-  font-family: 'Spartan', sans-serif !important;
+  font-family: "Spartan", sans-serif !important;
 }
 
 /* ...........PRINCIPAL BANNER............... */
@@ -716,21 +716,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0%;
   background-color: #f4f4f4;
   width: 100%;
-  height: auto;
+  height: 40rem;
   overflow: hidden;
 }
 
 .bannerflex .bannerflex__texto {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -778,15 +775,19 @@ body {
   font-weight: 600;
 }
 
-.bannerflex img {
-  width: 55rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  margin: 0%;
+.bannerflex .bannerflex__foto {
+  width: auto;
+  display: inline;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  overflow: visible;
+  height: 100%;
+}
+
+.bannerflex .bannerflex__foto img {
+  width: 100%;
+  height: auto;
 }
 
 /* ..............SECCION 2............... */
@@ -798,12 +799,14 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #11918c;
   height: 30rem;
-  color: whitesmoke;
   width: 100%;
 }
 
@@ -814,8 +817,8 @@ body {
   font-weight: 800;
   font-size: 4rem;
   text-align: left;
+  color: #f4f4f4;
   line-height: 4rem;
-  margin-left: 1rem;
 }
 
 .sobrenosotros p {
@@ -823,8 +826,8 @@ body {
   width: 40rem;
   text-align: right;
   font-size: 1.2rem;
-  margin-right: 1rem;
-  margin-left: 4rem;
+  margin-right: 2rem;
+  color: #f4f4f4;
 }
 
 /* ...................STICKERS DESTACADOS....................... */
@@ -872,7 +875,7 @@ body {
 }
 
 .container .card:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -891,7 +894,7 @@ body {
 }
 
 .container .card:after {
-  content: 'Pegarte';
+  content: "Pegarte";
   position: absolute;
   top: 45%;
   left: -10%;
@@ -1327,6 +1330,7 @@ body {
     margin-top: 2rem;
     margin-left: 0rem;
     align-items: center;
+    color: #f4f4f4;
   }
   .footer__menu {
     margin-left: 20rem;
