@@ -25,3 +25,27 @@
   width: 90%;  
 
 }
+
+/* MEDIAS 1 BEAKPOINT */
+@media (max-width: 843.97px) {
+  .contacto {
+
+    .contacto__titulo {
+      h2 {
+        display: inline-block;
+        width: 10rem;
+        font-size: 3rem;
+        font-weight: 800;
+        color: #11918c;
+        margin-top: 2rem;
+        margin-left: 2rem ;
+      }
+    }
+    .contacto__subtitulo {
+      h4 {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
