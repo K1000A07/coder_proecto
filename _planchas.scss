@@ -51,7 +51,45 @@
            
 }
 
-@media (max-width: 991.98px) {
+
+/* MEDIAS 1 BEAKPOINT */
+@media (max-width: 843.97px) {
+  .proximamente {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+    .proximamente__texto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0%;
+      margin-top: 3rem;
+
+      .titulo{
+        display: inline-block;
+
+        h2{
+        font-size: 2rem;
+        margin-left: 20rem;
+        }
+      }
+    }
+
+    .proximamente__foto {
+      margin-right: 0;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+/* MEDIAS 2 BEAKPOINT */
+@media (min-width: 843.98px) and (max-width: 1199.98px) {
   .proximamente {
     display: flex;
     flex-direction: column;
