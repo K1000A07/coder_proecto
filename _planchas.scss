@@ -1,5 +1,8 @@
+// PLANCHAS ESTILOS
+
 @import "mixin";
 
+// TEXTO PRINCIPAL 
 .proximamente {
   display: flex;
   flex-direction: row;
@@ -31,6 +34,7 @@
 
   }
 
+  // BOTONES MIXIN
   .botonesmap {
     a {
       text-decoration: none;
@@ -42,6 +46,7 @@
     }
   }
 
+  // CARRUSEL FOTOS
   .proximamente__foto{
     height: auto; 
     margin-right: 10rem;
