@@ -51,7 +51,7 @@
            
 }
 
-@media only screen and (max-width: 981px) {
+@media (max-width: 991.98px) {
   .proximamente {
     display: flex;
     flex-direction: column;
@@ -72,6 +72,7 @@
     .proximamente__foto {
       margin-right: 0;
       margin-top: 3rem;
+      margin-bottom: 3rem;
     }
   }
 }
