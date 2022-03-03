@@ -397,7 +397,237 @@ body {
 }
 
 /* MEDIAS 1 BEAKPOINT */
-@media (max-width: 991.98px) {
+
+@media (max-width: 843.97px) {
+  /* ...........banner principal........... */
+  .bannerflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0%;
+    background-color: #f4f4f4;
+    height: 24rem;
+    overflow: hidden;
+    width: auto;
+
+    .bannerflex__texto {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      margin-left: 1rem;
+
+      title {
+        width: 10rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 14px;
+      }
+    }
+
+    .boton:hover {
+      background-color: #033b3a;
+      transition-delay: 0, 75s;
+    }
+
+    .boton {
+      text-decoration: none;
+      color: #f4f4f4;
+      border-radius: 4px;
+      width: 6rem;
+      height: 2rem;
+      background-color: #11918c;
+      text-align: center;
+      padding-top: 0.2rem;
+      margin-top: 1,3rem;
+      transition: 0.5s;
+      font-size: small;
+      
+      .banner__boton {
+        font-size: small;
+      }
+    }
+  }
+
+  .bannerflex__foto {
+   display: none !important;
+  }
+
+  /* ..............SECCION 2............... */
+
+  .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 0;
+    justify-content: center;
+    width: auto;
+    overflow: hidden;
+
+    .titulo__contenedor {
+      display: flex;
+      align-items: center;
+
+      .sobrenosotros__titulo {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 2rem;
+        height: auto;
+        text-align: center ;
+        align-items: center;
+        font-size: 2rem ;
+        line-height: 2.5rem;
+      }
+    }
+
+    .sobrenosotros__texto {
+      display: inline-block;
+      justify-content: center;
+      margin-top: 0,5rem;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      width: auto;
+      height: auto;
+      font-size: 15px ;
+      text-align: center ;
+    }
+  }
+
+  
+  /* ..........catalogos............... */
+
+  .stickersdestacados {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: auto;
+    align-items: center !important;
+    justify-items: center;
+    margin: 0;
+
+    .contenedor {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin-top: 2rem;
+      margin-left: 3rem;
+  
+      h2 {
+        display: inline-block;
+        font-size: 2rem;
+        color: #11918c;
+        font-weight: 900;
+        line-height: 2rem ;
+        width: 2rem ;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+    
+    }
+  }
+  
+
+  .gridpadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .sticker {
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  
+  /* ...........footer............. */
+  .footer {
+    background-color: #11918c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: auto;
+    align-items: center;
+    width: auto;
+    overflow: hidden;
+
+    .footer__foto {
+      display: inline-block;
+      align-items: center;
+      margin-top: 2rem;
+      margin-left: 0rem;
+      align-items: center;
+      color: #f4f4f4;
+    }
+
+    .footer__menu {
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .footer__cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #f4f4f4;
+      margin-bottom: 2rem;
+
+      .footer__subtitulo {
+        color: whitesmoke;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        font-size: 10px;
+
+        .newsletter {
+          width: 8rem;
+          margin-right: 0rem;
+          align-items: center;
+          margin-left: 1.2rem;
+        }
+
+        .footer__mail {
+          margin-top: 0.2rem;
+          margin-bottom: 10rem;
+          font-size: 10px;
+        }
+
+        .footer__iconos {
+          display: inline-block;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  
+}
+
+
+
+/* MEDIAS 2 BEAKPOINT */
+@media (min-width: 843.98px) and (max-width: 1199.98px) {
   /* ...........banner principal........... */
   .bannerflex {
     display: flex;
