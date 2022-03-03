@@ -1142,7 +1142,7 @@ body {
 }
 
 /* MEDIAS 1 BEAKPOINT */
-@media only screen and (max-width: 991px) {
+@media (max-width: 991.98px) {
   /* ...........banner principal........... */
   .bannerflex {
     display: -webkit-box;
@@ -1171,6 +1171,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 5rem;
+    margin-bottom: 3rem;
   }
   .bannerflex__texto h1 {
     width: 10rem;
@@ -1221,7 +1222,7 @@ body {
     margin-right: 2rem;
     width: 20rem;
     height: auto;
-    text-align: center;
+    text-align: center !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1240,13 +1241,16 @@ body {
     width: auto;
     height: auto;
     font-size: 1rem;
-    text-align: center;
+    text-align: center !important;
   }
   /* ..........catalogos............... */
   .contenedor {
+    display: inline-block;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin-top: 2rem;
+    margin-left: 3rem;
   }
   .gridpadre {
     display: -ms-grid;
@@ -1255,7 +1259,8 @@ body {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1280,20 +1285,19 @@ body {
             flex-direction: column;
     background-color: #fff;
     width: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
     justify-items: center;
     margin: 0;
   }
   .stickersdestacados__titulo {
-    display: inline;
+    display: inline-block;
     font-size: 2.5rem;
     color: #11918c;
     font-weight: 900;
     line-height: 2.5rem;
     width: 25rem;
-    margin-bottom: 2rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1301,7 +1305,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 2rem;
   }
   /* ...........footer............. */
   .footer {
@@ -1323,7 +1326,7 @@ body {
     width: auto;
     overflow: hidden;
   }
-  .footer__foto {
+  .footer .footer__foto {
     display: inline-block;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1333,31 +1336,18 @@ body {
     align-items: center;
     color: #f4f4f4;
   }
-  .footer__menu {
-    margin-left: 20rem;
-  }
-  .footer__menu ul {
+  .footer .footer__menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 0rem;
-    list-style-type: none;
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .footer__menu a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: rem;
-    padding: 0.3rem;
-    margin-right: 0rem;
+  .footer .footer__menu ul li {
+    font-size: small;
   }
-  .footer__cta {
+  .footer .footer__cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1368,14 +1358,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    color: #f4f4f4;
   }
-  .footer__subtitulo {
+  .footer .footer__cta .footer__subtitulo {
     color: whitesmoke;
     margin-top: 0rem;
     margin-right: 0rem;
     font-size: 10px;
   }
-  #newsletter {
+  .footer .footer__cta .footer__subtitulo .newsletter {
     width: 8rem;
     margin-right: 0rem;
     -webkit-box-align: center;
@@ -1383,10 +1374,16 @@ body {
             align-items: center;
     margin-left: 1.2rem;
   }
-  .footer__mail {
+  .footer .footer__cta .footer__subtitulo .footer__mail {
     margin-top: 0.2rem;
     margin-bottom: 10rem;
     font-size: 10px;
+  }
+  .footer .footer__cta .footer__subtitulo .footer__iconos {
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
